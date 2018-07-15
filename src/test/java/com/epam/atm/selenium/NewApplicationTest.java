@@ -9,23 +9,22 @@ import org.testng.annotations.Test;
 
 public class NewApplicationTest extends BaseTest {
 
-    private static final String URL = "//input[@class='input r4 wide mb16 mt8 username']";
+    private static final String URL = "https://network-international--qa.cs83.my.salesforce.com/";
     private static final String LOGIN = "yauhen_valodzin@epam.com.qa";
     private static final String PASSWORD = "Ceakt_1234";
     private static final String TITLE_LOGIN_PAGE = "Login | Salesforce";
     private static final String TITLE_HOME_PAGE = "Recently Viewed | Applications | Salesforce";
     private static final String TITLE_SECOND_PART_FORM = "New Application: New";
     private static final String MSF_VALUE = "1.49%";
-    private static final String BUSINESS_NATURE_VALUE = "Computer Services";
 
     @Test
     public void createNewApplicationWithDefaultSetup() {
         int x = (int) (Math.random() * 1000);
-        driver.get("https://network-international--qa.cs83.my.salesforce.com/");
+        driver.get(URL);
         System.out.println("Open application (url) for testing");
         System.out.println("Check that correct Login page is opened");
         Assert.assertEquals(driver.getTitle(), TITLE_LOGIN_PAGE, "Incorrect page (login page) is opened");
-        WebElement usernameInput = driver.findElementByXPath(URL);
+        WebElement usernameInput = driver.findElementByXPath("//input[@class='input r4 wide mb16 mt8 username']");
         usernameInput.sendKeys(LOGIN);
         System.out.println("Find and populate Username field");
         WebElement passwordInput = driver.findElementByXPath("//input[@class='input r4 wide mb16 mt8 password']");
@@ -38,8 +37,8 @@ public class NewApplicationTest extends BaseTest {
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated((By.xpath("//span[text()='Recently Viewed']"))));
         System.out.println("Check that correct Home page (after login) is opened");
         Assert.assertEquals(driver.getTitle(), TITLE_HOME_PAGE, "Incorrect Home page is not opened");
-        WebElement alicationDropdown = driver.findElementByXPath("//span[text()='Applications']/../../one-app-nav-bar-item-dropdown//*[@role='button']");
-        alicationDropdown.click();
+        WebElement applicationDropdown = driver.findElementByXPath("//span[text()='Applications']/../../one-app-nav-bar-item-dropdown//*[@role='button']");
+        applicationDropdown.click();
         System.out.println("Find and click Applications dropdown");
         WebElement createNewAppButton = driver.findElementByXPath("//span[text()='New Application']");
         createNewAppButton.click();
