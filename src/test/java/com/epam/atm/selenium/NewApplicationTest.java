@@ -9,18 +9,27 @@ import org.testng.annotations.Test;
 
 public class NewApplicationTest extends BaseTest {
 
+    private static final String URL = "//input[@class='input r4 wide mb16 mt8 username']";
+    private static final String LOGIN = "yauhen_valodzin@epam.com.qa";
+    private static final String PASSWORD = "Ceakt_1234";
+    private static final String TITLE_LOGIN_PAGE = "Login | Salesforce";
+    private static final String TITLE_HOME_PAGE = "Recently Viewed | Applications | Salesforce";
+    private static final String TITLE_SECOND_PART_FORM = "New Application: New";
+    private static final String MSF_VALUE = "1.49%";
+    private static final String BUSINESS_NATURE_VALUE = "Computer Services";
+
     @Test
     public void createNewApplicationWithDefaultSetup() {
         int x = (int) (Math.random() * 1000);
         driver.get("https://network-international--qa.cs83.my.salesforce.com/");
         System.out.println("Open application (url) for testing");
         System.out.println("Check that correct Login page is opened");
-        Assert.assertEquals(driver.getTitle(), "Login | Salesforce", "Incorrect page (login page) is opened");
-        WebElement usernameInput = driver.findElementByXPath("//input[@class='input r4 wide mb16 mt8 username']");
-        usernameInput.sendKeys("yauhen_valodzin@epam.com.qa");
+        Assert.assertEquals(driver.getTitle(), TITLE_LOGIN_PAGE, "Incorrect page (login page) is opened");
+        WebElement usernameInput = driver.findElementByXPath(URL);
+        usernameInput.sendKeys(LOGIN);
         System.out.println("Find and populate Username field");
         WebElement passwordInput = driver.findElementByXPath("//input[@class='input r4 wide mb16 mt8 password']");
-        passwordInput.sendKeys("Ceakt_1234");
+        passwordInput.sendKeys(PASSWORD);
         System.out.println("Find and populate Password field");
         WebElement loginButton = driver.findElementByXPath("//input[@class='button r4 wide primary']");
         loginButton.click();
@@ -28,7 +37,7 @@ public class NewApplicationTest extends BaseTest {
         System.out.println("Add explicit wait");
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated((By.xpath("//span[text()='Recently Viewed']"))));
         System.out.println("Check that correct Home page (after login) is opened");
-        Assert.assertEquals(driver.getTitle(), "Recently Viewed | Applications | Salesforce", "Incorrect Home page is not opened");
+        Assert.assertEquals(driver.getTitle(), TITLE_HOME_PAGE, "Incorrect Home page is not opened");
         WebElement alicationDropdown = driver.findElementByXPath("//span[text()='Applications']/../../one-app-nav-bar-item-dropdown//*[@role='button']");
         alicationDropdown.click();
         System.out.println("Find and click Applications dropdown");
@@ -53,7 +62,7 @@ public class NewApplicationTest extends BaseTest {
         WebElement secontPartFormTitle = driver.findElementByXPath("//h2[@class=\"title slds-text-heading--medium\"]");
         System.out.println("Check that second part of form Create new Application is opened");
         String secontPartFormTitleValue = secontPartFormTitle.getText();
-        Assert.assertEquals(secontPartFormTitleValue, "New Application: New", "Second part of Create new Application form is not opened");
+        Assert.assertEquals(secontPartFormTitleValue, TITLE_SECOND_PART_FORM, "Second part of Create new Application form is not opened");
         WebElement formLastNameInput = driver.findElementByXPath("//input[@maxlength='80' and @data-interactive-lib-uid='24']");
         formLastNameInput.sendKeys("test");
         System.out.println("Find and populate Last Name field");
@@ -62,6 +71,8 @@ public class NewApplicationTest extends BaseTest {
         System.out.println("Find and open Business Line drop down");
         WebElement formBusinessLineValue = driver.findElementByXPath("//a[text()='Computer Network/Information Services']");
         formBusinessLineValue.click();
+        String formBusinessLineValueCheck = formBusinessLineDropdown.getText();
+        Assert.assertEquals(formBusinessLineValueCheck, "Computer Network/Information Services", "test");
         System.out.println("Find and select value from Business drop down");
         WebElement formSaveButton = driver.findElementByXPath("//button[@class='slds-button slds-button--neutral uiButton--default uiButton--brand uiButton forceActionButton']");
         formSaveButton.click();
@@ -69,6 +80,6 @@ public class NewApplicationTest extends BaseTest {
         WebElement standardMSFRate = driver.findElementByXPath("//span[text()='* Standard MSF rate']/../../..//*[@data-aura-class='uiOutputPercent']");
         String valueMSF = standardMSFRate.getText();
         System.out.println("Final check");
-        Assert.assertEquals(valueMSF, "1.49%", "Invalid value in field Standard MSF Rate");
+        Assert.assertEquals(valueMSF, MSF_VALUE, "Invalid value in field Standard MSF Rate");
     }
 }

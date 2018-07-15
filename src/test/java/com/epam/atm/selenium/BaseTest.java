@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
-    ChromeDriver driver;
+    protected ChromeDriver driver;
 
     @BeforeClass(description = "Start browser")
     public void startBrowser() {
