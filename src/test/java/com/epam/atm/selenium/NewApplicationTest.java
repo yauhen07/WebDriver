@@ -16,6 +16,7 @@ public class NewApplicationTest extends BaseTest {
     private static final String TITLE_HOME_PAGE = "Recently Viewed | Applications | Salesforce";
     private static final String TITLE_SECOND_PART_FORM = "New Application: New";
     private static final String MSF_VALUE = "1.49%";
+    private static final String BUSINESS_LINE_VALUE = "Computer Network/Information Services";
 
     @Test
     public void createNewApplicationWithDefaultSetup() {
@@ -71,7 +72,7 @@ public class NewApplicationTest extends BaseTest {
         WebElement formBusinessLineValue = driver.findElementByXPath("//a[text()='Computer Network/Information Services']");
         formBusinessLineValue.click();
         String formBusinessLineValueCheck = formBusinessLineDropdown.getText();
-        Assert.assertEquals(formBusinessLineValueCheck, "Computer Network/Information Services", "test");
+        Assert.assertEquals(formBusinessLineValueCheck, BUSINESS_LINE_VALUE, "Incorrect value is selected for BusinessLine dropdown");
         System.out.println("Find and select value from Business drop down");
         WebElement formSaveButton = driver.findElementByXPath("//button[@class='slds-button slds-button--neutral uiButton--default uiButton--brand uiButton forceActionButton']");
         formSaveButton.click();
