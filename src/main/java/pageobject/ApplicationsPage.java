@@ -1,4 +1,4 @@
-package com.epam.atm.selenium.pageobject;
+package pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,8 +10,9 @@ public class ApplicationsPage extends AbstractPage {
         super(driver);
     }
 
-    public NewApplicationFirstForm clickCreateNewApplicationButton() {
+    public NewApplicationFirstFormPage clickCreateNewApplicationButton() {
+        System.out.println("Click Create New Application button");
         driver.findElement(NEW_APPLICATION_BUTTON_LOCATOR).click();
-        return new NewApplicationFirstForm(driver);
+        return new NewApplicationFirstFormPage(driver);
     }
 }
