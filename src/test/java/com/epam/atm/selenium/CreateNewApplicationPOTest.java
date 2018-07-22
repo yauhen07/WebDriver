@@ -20,7 +20,7 @@ public class CreateNewApplicationPOTest extends BaseTest {
     public void createNewBasicApplication() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.openURL();
-        HomePage homePage = loginPage.inputCredAndLogin(driver, LOGIN, PASSWORD);
+        HomePage homePage = loginPage.inputCredAndLogin(LOGIN, PASSWORD);
         ApplicationsPage applicationsPage = homePage.clickApplicationsLinkInNavBar();
         NewApplicationFirstFormPage firstFormOfApplication = applicationsPage.clickCreateNewApplicationButton();
         firstFormOfApplication.inputTradeName(TRADE_NAME);

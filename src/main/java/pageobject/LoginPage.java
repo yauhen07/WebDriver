@@ -20,12 +20,12 @@ public class LoginPage extends AbstractPage {
 
     public void inputUsername(String userName) {
         System.out.println("Clear and populate User Name field");
-        Help.clearAndInput(driver, USER_NAME_FIELD_LOCATOR, userName);
+        Helpers.clearAndInput(driver, USER_NAME_FIELD_LOCATOR, userName);
     }
 
     public void inputPassword(String password) {
         System.out.println("Clear and populate Password field");
-        Help.clearAndInput(driver, PASSWORD_FIELD_LOCATOR, password);
+        Helpers.clearAndInput(driver, PASSWORD_FIELD_LOCATOR, password);
     }
 
     public HomePage clickLoginButton() {
@@ -49,7 +49,7 @@ public class LoginPage extends AbstractPage {
         return driver.findElement(LOGIN_BUTTON_LOCATOR).isDisplayed();
     }
 
-    public HomePage inputCredAndLogin(WebDriver driver, String username, String password) {
+    public HomePage inputCredAndLogin(String username, String password) {
         inputUsername(username);
         inputPassword(password);
         clickLoginButton();

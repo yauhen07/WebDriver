@@ -13,7 +13,7 @@ public class CreateNewCasePOTest extends BaseTest {
     public void creationOfNewCase() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.openURL();
-        HomePage homePage = loginPage.inputCredAndLogin(driver, LOGIN, PASSWORD);
+        HomePage homePage = loginPage.inputCredAndLogin(LOGIN, PASSWORD);
         CasesPage casesPage = homePage.clickCasesLinkInNavBar();
         NewCaseFirstFormPage caseFirstFormPage = casesPage.clickCreateNewCaseButton();
         NewCaseSecondFormPage caseSecondFormPage = caseFirstFormPage.clickNextButton();

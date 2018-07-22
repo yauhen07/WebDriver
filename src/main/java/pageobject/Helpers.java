@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class Help {
+public class Helpers {
 
     public static void clearAndInput(WebDriver driver, By locator, String input) {
         driver.findElement(locator).clear();

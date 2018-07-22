@@ -16,22 +16,22 @@ public class NewApplicationFirstFormPage extends AbstractPage {
 
     public void inputTradeName(String tradeName) {
         System.out.println("Clear and populate Trade Name field");
-        Help.clearAndInput(driver, TRADE_NAME_FIELD_LOCATOR, tradeName);
+        Helpers.clearAndInput(driver, TRADE_NAME_FIELD_LOCATOR, tradeName);
     }
 
     public void inputEmail(String email) {
         System.out.println("Clear and populate Email field");
-        Help.clearAndInput(driver, EMAIL_FIELD_LOCATOR, email);
+        Helpers.clearAndInput(driver, EMAIL_FIELD_LOCATOR, email);
     }
 
     public void selectBusinessNatureOption(String businessNature) {
         System.out.println("Select value from Business Nature Option");
-        Help.selectValueFromDropdownAppForm(driver, BUSINESS_NATURE_VALUE_LIST_LOCATOR, BUSINESS_NATURE_VALUE_LIST_LOCATOR, businessNature, "value");
+        Helpers.selectValueFromDropdownAppForm(driver, BUSINESS_NATURE_VALUE_LIST_LOCATOR, BUSINESS_NATURE_VALUE_LIST_LOCATOR, businessNature, "value");
     }
 
     public void inputNumberOfAddOutlets(String numberOfOutlets) {
         System.out.println("Clear and populate Number Of Additional Outlets field");
-        Help.clearAndInput(driver, NUMBER_ADDITIONAL_OUTLETS_FIELD_LOCATOR, numberOfOutlets);
+        Helpers.clearAndInput(driver, NUMBER_ADDITIONAL_OUTLETS_FIELD_LOCATOR, numberOfOutlets);
     }
 
     public NewApplicationSecondFormPage clickNextButton() {

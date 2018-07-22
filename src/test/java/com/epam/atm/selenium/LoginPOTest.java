@@ -15,7 +15,7 @@ public class LoginPOTest extends BaseTest {
         Assert.assertTrue(loginPage.checkUsernameIsDisplayed(), "Username field is not displayed");
         Assert.assertTrue(loginPage.checkPasswordIsDisplayed(), "Password field is not displayed");
         Assert.assertTrue(loginPage.checkLoginButtonIsDisplayed(), "Login button is not displayed");
-        HomePage homePage = loginPage.inputCredAndLogin(driver, LOGIN, PASSWORD);
+        HomePage homePage = loginPage.inputCredAndLogin(LOGIN, PASSWORD);
         Assert.assertEquals(homePage.getTitleOfHomePage(), TITLE_HOME_PAGE, "User is not logged in or incorrect Home page is not opened");
     }
 }
