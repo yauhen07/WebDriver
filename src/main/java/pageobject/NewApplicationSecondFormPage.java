@@ -2,9 +2,6 @@ package pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class NewApplicationSecondFormPage extends AbstractPage {
     private static final By LAST_NAME_INPUT_LOCATOR = By.xpath("//input[@maxlength='80' and @data-interactive-lib-uid='24']");
@@ -19,28 +16,17 @@ public class NewApplicationSecondFormPage extends AbstractPage {
 
     public void inputLastName(String lastName) {
         System.out.println("Clear and populate Last Name field");
-        driver.findElement(LAST_NAME_INPUT_LOCATOR).clear();
-        driver.findElement(LAST_NAME_INPUT_LOCATOR).sendKeys(lastName);
+        Help.clearAndInput(driver, LAST_NAME_INPUT_LOCATOR, lastName);
     }
 
     public void inputContactMobilePhone(String mobilePhone) {
         System.out.println("Clear and populate Mobile Phone field");
-        driver.findElement(CONTACT_MOBILE_PHONE_INPUT_LOCATOR).clear();
-        driver.findElement(CONTACT_MOBILE_PHONE_INPUT_LOCATOR).sendKeys(mobilePhone);
+        Help.clearAndInput(driver, CONTACT_MOBILE_PHONE_INPUT_LOCATOR, mobilePhone);
     }
 
     public void selectBusinessLineOption(String businessLine) {
         System.out.println("Select value from Business Line dropdown");
-        driver.findElement(BUSINESS_LINE_DROPDOWN_LOCATOR).click();
-        List<WebElement> businessNatureDropdown = driver.findElements(BUSINESS_LINE_VALUE_LIST_LOCATOR);
-        for (int i = 0; i < businessNatureDropdown.size(); i++) {
-            WebElement element = businessNatureDropdown.get(i);
-            String innerComp = element.getAttribute("title");
-            if (innerComp.contentEquals(businessLine)) {
-                element.click();
-                break;
-            }
-        }
+        Help.selectValueFromDropdownAppForm(driver, BUSINESS_LINE_DROPDOWN_LOCATOR, BUSINESS_LINE_VALUE_LIST_LOCATOR, businessLine, "title");
     }
 
     public ApplicationOverviewPage clickSaveButton() {

@@ -11,7 +11,7 @@ public class CaseOverviewPage extends AbstractPage {
     }
 
     public String getStatusOfCase() {
-        String statusOfCase = driver.findElement(SATUS_OF_CASE_LOCATOR).getText();
-        return statusOfCase;
+        System.out.println("Check Case created with Status - New");
+        return driver.findElement(SATUS_OF_CASE_LOCATOR).getText();
     }
 }

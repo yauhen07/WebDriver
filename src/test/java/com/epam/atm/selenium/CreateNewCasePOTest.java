@@ -13,14 +13,11 @@ public class CreateNewCasePOTest extends BaseTest {
     public void creationOfNewCase() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.openURL();
-        loginPage.inputUsername(LOGIN);
-        loginPage.inputPassword(PASSWORD);
-        HomePage homePage = loginPage.clickLoginButton();
+        HomePage homePage = loginPage.inputCredAndLogin(driver, LOGIN, PASSWORD);
         CasesPage casesPage = homePage.clickCasesLinkInNavBar();
         NewCaseFirstFormPage caseFirstFormPage = casesPage.clickCreateNewCaseButton();
         NewCaseSecondFormPage caseSecondFormPage = caseFirstFormPage.clickNextButton();
         CaseOverviewPage caseOverviewPage = caseSecondFormPage.clickSaveCaseButton();
-        System.out.println("Check Case created with Status - New");
         Assert.assertEquals(caseOverviewPage.getStatusOfCase(), CASE_STATUS, "Incorrect status of Case");
     }
 }
