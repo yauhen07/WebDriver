@@ -8,6 +8,8 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
     protected ChromeDriver driver;
+    protected String LOGIN = "yauhen_valodzin@epam.com.qa";
+    protected String PASSWORD = "Ceakt_1234";
 
     @BeforeClass(description = "Start browser")
     public void startBrowser() {
