@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pageobject.*;
 import util.DataGeneration;
 
-public class CreateNewApplicationPOTest extends BaseTest {
+public class CreateNewApplicationPOTest extends BaseLocalTest {
 
     private static final String TRADE_NAME = DataGeneration.generateUniqueTradeName();
     private static final String EMAIL = TRADE_NAME + "@example.com";

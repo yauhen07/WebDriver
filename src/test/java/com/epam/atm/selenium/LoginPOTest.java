@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import pageobject.HomePage;
 import pageobject.LoginPage;
 
-public class LoginPOTest extends BaseTest {
-    private static final String TITLE_HOME_PAGE = "Recently Viewed | Applications | Salesforce";
+public class LoginPOTest extends BaseLocalTest {
+    private static final String TITLE_HOME_PAGE = "Home | Salesforce";
 
     @Test(description = "Check Login to SalesForce is working")
     public void loginToSF() {
@@ -16,6 +16,6 @@ public class LoginPOTest extends BaseTest {
         Assert.assertTrue(loginPage.checkPasswordIsDisplayed(), "Password field is not displayed");
         Assert.assertTrue(loginPage.checkLoginButtonIsDisplayed(), "Login button is not displayed");
         HomePage homePage = loginPage.inputCredAndLogin(LOGIN, PASSWORD);
-        Assert.assertEquals(homePage.getTitleOfHomePage(), TITLE_HOME_PAGE, "User is not logged in or incorrect Home page is not opened");
+        Assert.assertEquals(homePage.getHomePageTitle(), TITLE_HOME_PAGE, "User is not logged in or incorrect Home page is not opened");
     }
 }

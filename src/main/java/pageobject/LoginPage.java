@@ -2,6 +2,10 @@ package pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import util.Helpers;
+import util.Screenshoter;
 
 public class LoginPage extends AbstractPage {
     private static final String URL = "https://network-international--qa.cs83.my.salesforce.com/";
@@ -53,6 +57,39 @@ public class LoginPage extends AbstractPage {
         inputUsername(username);
         inputPassword(password);
         clickLoginButton();
+        return new HomePage(driver);
+    }
+
+    public void inputUsernameHighlightAndScreenshotAction(String userName) {
+        highlightElement(USER_NAME_FIELD_LOCATOR);
+        System.out.println("Clear and populate User Name field");
+        Helpers.clearAndInputAction(driver, USER_NAME_FIELD_LOCATOR, userName);
+        Screenshoter.takeScreenshot(driver);
+        unhighlightElement(USER_NAME_FIELD_LOCATOR);
+    }
+
+    public void inputPasswordHighlightAndScreenshotAction(String password) {
+        highlightElement(PASSWORD_FIELD_LOCATOR);
+        System.out.println("Clear and populate Password field");
+        Helpers.clearAndInputAction(driver, PASSWORD_FIELD_LOCATOR, password);
+        Screenshoter.takeScreenshot(driver);
+        unhighlightElement(PASSWORD_FIELD_LOCATOR);
+    }
+
+    public HomePage clickLoginButtonHighlightAndScreenshotAction() {
+        WebElement loginButton = driver.findElement(LOGIN_BUTTON_LOCATOR);
+        highlightElement(LOGIN_BUTTON_LOCATOR);
+        Screenshoter.takeScreenshot(driver);
+        unhighlightElement(LOGIN_BUTTON_LOCATOR);
+        System.out.println("Click Login button");
+        new Actions(driver).click(loginButton).build().perform();
+        return new HomePage(driver);
+    }
+
+    public HomePage inputCredAndLoginHighlightAndScreenshotAction(String username, String password) {
+        inputUsernameHighlightAndScreenshotAction(username);
+        inputPasswordHighlightAndScreenshotAction(password);
+        clickLoginButtonHighlightAndScreenshotAction();
         return new HomePage(driver);
     }
 }

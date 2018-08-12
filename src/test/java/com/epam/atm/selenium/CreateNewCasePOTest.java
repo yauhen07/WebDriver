@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobject.*;
 
-public class CreateNewCasePOTest extends BaseTest {
+public class CreateNewCasePOTest extends BaseLocalTest {
     private static final String LOGIN = "yauhen_valodzin@epam.com.qa";
     private static final String PASSWORD = "Ceakt_1234";
     private static final String CASE_STATUS = "New";

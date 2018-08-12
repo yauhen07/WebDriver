@@ -1,8 +1,10 @@
-package pageobject;
+package util;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
@@ -27,4 +29,11 @@ public class Helpers {
             }
         }
     }
+
+    public static void clearAndInputAction(WebDriver driver, By locator, String input) {
+        WebElement inputField = driver.findElement(locator);
+        new Actions(driver).sendKeys(inputField, Keys.CLEAR).build().perform();
+        new Actions(driver).sendKeys(inputField, input).build().perform();
+    }
 }
+

@@ -2,6 +2,7 @@ package pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import util.Helpers;
 
 public class NewApplicationSecondFormPage extends AbstractPage {
     private static final By LAST_NAME_INPUT_LOCATOR = By.xpath("//input[@maxlength='80' and @data-interactive-lib-uid='24']");
