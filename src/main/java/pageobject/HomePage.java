@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class HomePage extends AbstractPage {
     private static final By APPLICATIONS_NAVIGATION_BAR_LOCATOR = By.xpath("//span[@class='slds-truncate'][contains(text(),'Applications')]");
     private static final By CASES_NAVIGATION_BAR_LOCATOR = By.xpath("//span[contains(@class,'slds-truncate')][contains(text(),'Cases')]");
-    private static final By TITLE_HOME_PAGE_LOCATOR = By.xpath("//*[text()='Recently Viewed | Applications | Salesforce']");
+    private static final By TITLE_HOME_PAGE_LOCATOR = By.xpath("//*[text()='Home | Salesforce']");
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -24,7 +24,7 @@ public class HomePage extends AbstractPage {
         return new CasesPage(driver);
     }
 
-    public String getTitleOfHomePage() {
+    public String getHomePageTitle() {
         waitForElementPresent(TITLE_HOME_PAGE_LOCATOR);
         System.out.println("Check that user is successfully logged in and correct Home page is displayed");
         return driver.getTitle();

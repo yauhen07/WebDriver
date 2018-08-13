@@ -2,6 +2,7 @@ package pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import util.Helpers;
 
 public class NewApplicationFirstFormPage extends AbstractPage {
     private static final By TRADE_NAME_FIELD_LOCATOR = By.id("input-3");

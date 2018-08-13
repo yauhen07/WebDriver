@@ -1,20 +1,27 @@
 package com.epam.atm.selenium;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import java.util.concurrent.TimeUnit;
 
-public class BaseTest {
-    protected ChromeDriver driver;
+public abstract class BaseTest {
+    protected WebDriver driver;
     protected String LOGIN = "yauhen_valodzin@epam.com.qa";
     protected String PASSWORD = "Ceakt_1234";
+    protected String PROPERTY_CHROME = "webdriver.chrome.driver";
+    protected String PATH_TO_CHROMEDRIVER = "C:\\data\\tools\\chromedriver.exe";
+
+    protected abstract void getWebDriver();
+
+    public void setWebDriverSystemProperty() {
+        System.setProperty(PROPERTY_CHROME, PATH_TO_CHROMEDRIVER);
+    }
 
     @BeforeClass(description = "Start browser")
     public void startBrowser() {
-        System.setProperty("webdriver.chrome.driver", "C:\\data\\tools\\chromedriver.exe");
-        driver = new ChromeDriver();
+        getWebDriver();
         driver.manage().window().maximize();
         System.out.println("Maximize window");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -26,4 +33,6 @@ public class BaseTest {
         driver.quit();
         System.out.println("Browser was closed");
     }
+
+
 }
