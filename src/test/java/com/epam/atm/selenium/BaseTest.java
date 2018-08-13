@@ -10,8 +10,14 @@ public abstract class BaseTest {
     protected WebDriver driver;
     protected String LOGIN = "yauhen_valodzin@epam.com.qa";
     protected String PASSWORD = "Ceakt_1234";
+    protected String PROPERTY_CHROME = "webdriver.chrome.driver";
+    protected String PATH_TO_CHROMEDRIVER = "C:\\data\\tools\\chromedriver.exe";
 
     protected abstract void getWebDriver();
+
+    public void setWebDriverSystemProperty() {
+        System.setProperty(PROPERTY_CHROME, PATH_TO_CHROMEDRIVER);
+    }
 
     @BeforeClass(description = "Start browser")
     public void startBrowser() {

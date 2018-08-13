@@ -2,8 +2,6 @@ package pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import util.Helpers;
 import util.Screenshoter;
 
@@ -77,12 +75,11 @@ public class LoginPage extends AbstractPage {
     }
 
     public HomePage clickLoginButtonHighlightAndScreenshotAction() {
-        WebElement loginButton = driver.findElement(LOGIN_BUTTON_LOCATOR);
         highlightElement(LOGIN_BUTTON_LOCATOR);
         Screenshoter.takeScreenshot(driver);
         unhighlightElement(LOGIN_BUTTON_LOCATOR);
         System.out.println("Click Login button");
-        new Actions(driver).click(loginButton).build().perform();
+        Helpers.clickButtonAction(driver, LOGIN_BUTTON_LOCATOR);
         return new HomePage(driver);
     }
 

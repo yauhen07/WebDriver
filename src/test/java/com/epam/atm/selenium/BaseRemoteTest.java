@@ -7,11 +7,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class BaseRemoteTest extends BaseTest {
+    private static final String URL_REMOTE_DRIVER = "http://127.0.0.1:4444/wd/hub";
 
     protected void getWebDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\data\\tools\\chromedriver.exe");
+        setWebDriverSystemProperty();
         try {
-            driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), DesiredCapabilities.chrome());
+            driver = new RemoteWebDriver(new URL(URL_REMOTE_DRIVER), DesiredCapabilities.chrome());
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

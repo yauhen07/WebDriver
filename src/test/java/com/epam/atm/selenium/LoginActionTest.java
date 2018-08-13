@@ -16,6 +16,6 @@ public class LoginActionTest extends BaseRemoteTest {
         Assert.assertTrue(loginActionPage.checkPasswordIsDisplayed(), "Password field is not displayed");
         Assert.assertTrue(loginActionPage.checkLoginButtonIsDisplayed(), "Login button is not displayed");
         HomePage homePage = loginActionPage.inputCredAndLoginHighlightAndScreenshotAction(LOGIN, PASSWORD);
-        Assert.assertEquals(homePage.getHomePageTitleAction(), TITLE_HOME_PAGE, "User is not logged in or incorrect Home page is not opened");
+        Assert.assertEquals(homePage.getHomePageTitle(), TITLE_HOME_PAGE, "User is not logged in or incorrect Home page is not opened");
     }
 }

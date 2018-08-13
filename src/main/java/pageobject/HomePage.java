@@ -29,10 +29,4 @@ public class HomePage extends AbstractPage {
         System.out.println("Check that user is successfully logged in and correct Home page is displayed");
         return driver.getTitle();
     }
-
-    public String getHomePageTitleAction() {
-        waitForElementPresent(TITLE_HOME_PAGE_LOCATOR);
-        System.out.println("Check that user is successfully logged in and correct Home page is displayed");
-        return driver.getTitle();
-    }
 }
