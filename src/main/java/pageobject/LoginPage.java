@@ -1,5 +1,6 @@
 package pageobject;
 
+import businessobject.AdminUser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import util.Helpers;
@@ -54,6 +55,13 @@ public class LoginPage extends AbstractPage {
     public HomePage inputCredAndLogin(String username, String password) {
         inputUsername(username);
         inputPassword(password);
+        clickLoginButton();
+        return new HomePage(driver);
+    }
+
+    public HomePage inputCredAndLogin(AdminUser user) {
+        inputUsername(user.getLogin());
+        inputPassword(user.getPassword());
         clickLoginButton();
         return new HomePage(driver);
     }
