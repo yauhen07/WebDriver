@@ -36,7 +36,7 @@ public class Helpers {
         new Actions(driver).sendKeys(inputField, input).build().perform();
     }
 
-    public static void clickButtonAction(WebDriver driver, By locator){
+    public static void clickButtonAction(WebDriver driver, By locator) {
         WebElement loginButton = driver.findElement(locator);
         new Actions(driver).click(loginButton).build().perform();
     }

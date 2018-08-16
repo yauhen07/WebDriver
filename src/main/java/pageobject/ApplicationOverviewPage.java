@@ -12,7 +12,6 @@ public class ApplicationOverviewPage extends AbstractPage {
 
     public String getStandartMSFRate() {
         System.out.println("Check Standard MSF rate for newly created Application");
-        String valueMSFRate = driver.findElement(STANDARD_MSF_RATE_FIELD_LOCATOR).getText();
-        return valueMSFRate;
+        return driver.findElement(STANDARD_MSF_RATE_FIELD_LOCATOR).getText();
     }
 }

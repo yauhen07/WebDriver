@@ -1,5 +1,6 @@
 package com.epam.atm.selenium;
 
+import businessobject.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobject.HomePage;
@@ -15,7 +16,7 @@ public class LoginActionTest extends BaseRemoteTest {
         Assert.assertTrue(loginActionPage.checkUsernameIsDisplayed(), "Username field is not displayed");
         Assert.assertTrue(loginActionPage.checkPasswordIsDisplayed(), "Password field is not displayed");
         Assert.assertTrue(loginActionPage.checkLoginButtonIsDisplayed(), "Login button is not displayed");
-        HomePage homePage = loginActionPage.inputCredAndLoginHighlightAndScreenshotAction(LOGIN, PASSWORD);
+        HomePage homePage = loginActionPage.inputCredAndLoginHighlightAndScreenshotAction(new User());
         Assert.assertEquals(homePage.getHomePageTitle(), TITLE_HOME_PAGE, "User is not logged in or incorrect Home page is not opened");
     }
 }

@@ -1,5 +1,6 @@
 package com.epam.atm.selenium;
 
+import businessobject.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobject.HomePage;
@@ -15,7 +16,7 @@ public class LoginPOTest extends BaseLocalTest {
         Assert.assertTrue(loginPage.checkUsernameIsDisplayed(), "Username field is not displayed");
         Assert.assertTrue(loginPage.checkPasswordIsDisplayed(), "Password field is not displayed");
         Assert.assertTrue(loginPage.checkLoginButtonIsDisplayed(), "Login button is not displayed");
-        HomePage homePage = loginPage.inputCredAndLogin(LOGIN, PASSWORD);
+        HomePage homePage = loginPage.inputCredAndLogin(new User());
         Assert.assertEquals(homePage.getHomePageTitle(), TITLE_HOME_PAGE, "User is not logged in or incorrect Home page is not opened");
     }
 }
