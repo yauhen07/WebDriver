@@ -1,5 +1,6 @@
 package pageobject;
 
+import businessobjects.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import util.Helpers;
@@ -58,6 +59,13 @@ public class LoginPage extends AbstractPage {
         return new HomePage(driver);
     }
 
+    public HomePage inputCredAndLogin(User user) {
+        inputUsername(user.getLogin());
+        inputPassword(user.getPassword());
+        clickLoginButton();
+        return new HomePage(driver);
+    }
+
     public void inputUsernameHighlightAndScreenshotAction(String userName) {
         highlightElement(USER_NAME_FIELD_LOCATOR);
         System.out.println("Clear and populate User Name field");
@@ -83,9 +91,9 @@ public class LoginPage extends AbstractPage {
         return new HomePage(driver);
     }
 
-    public HomePage inputCredAndLoginHighlightAndScreenshotAction(String username, String password) {
-        inputUsernameHighlightAndScreenshotAction(username);
-        inputPasswordHighlightAndScreenshotAction(password);
+    public HomePage inputCredAndLoginHighlightAndScreenshotAction(User user) {
+        inputUsernameHighlightAndScreenshotAction(user.getLogin());
+        inputPasswordHighlightAndScreenshotAction(user.getPassword());
         clickLoginButtonHighlightAndScreenshotAction();
         return new HomePage(driver);
     }

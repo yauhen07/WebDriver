@@ -1,8 +1,10 @@
 package com.epam.atm.selenium;
 
+import businessobjects.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobject.*;
+import services.LoginService;
 import util.DataGeneration;
 
 public class CreateNewApplicationPOTest extends BaseLocalTest {
@@ -18,9 +20,7 @@ public class CreateNewApplicationPOTest extends BaseLocalTest {
 
     @Test(description = "Creation of new Application and check Standard MSF rate")
     public void createNewBasicApplication() {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.openURL();
-        HomePage homePage = loginPage.inputCredAndLogin(LOGIN, PASSWORD);
+        HomePage homePage = LoginService.loginToSF(driver, new User());
         ApplicationsPage applicationsPage = homePage.clickApplicationsLinkInNavBar();
         NewApplicationFirstFormPage firstFormOfApplication = applicationsPage.clickCreateNewApplicationButton();
         firstFormOfApplication.inputTradeName(TRADE_NAME);
