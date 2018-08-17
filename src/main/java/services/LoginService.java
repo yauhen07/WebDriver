@@ -1,6 +1,6 @@
 package services;
 
-import businessobject.User;
+import businessobjects.User;
 import org.openqa.selenium.WebDriver;
 import pageobject.HomePage;
 import pageobject.LoginPage;

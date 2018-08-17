@@ -1,4 +1,4 @@
-package businessobject;
+package businessobjects;
 
 public class User {
     private static final String ADMIN_LOGIN = "yauhen_valodzin@epam.com.qa";

@@ -1,6 +1,6 @@
 package pageobject;
 
-import businessobject.User;
+import businessobjects.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import util.Helpers;

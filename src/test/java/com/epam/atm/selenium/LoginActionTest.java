@@ -1,6 +1,6 @@
 package com.epam.atm.selenium;
 
-import businessobject.User;
+import businessobjects.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobject.HomePage;
