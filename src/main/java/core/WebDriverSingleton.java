@@ -7,8 +7,13 @@ import java.util.concurrent.TimeUnit;
 public class WebDriverSingleton {
 
     private static WebDriver instance;
+    private static RunLocationCreator runLocationCreator;
 
     private WebDriverSingleton() {
+    }
+
+    public static void selectDriverType(RunLocationCreator locationCreator) {
+        runLocationCreator = locationCreator;
     }
 
     public static WebDriver getWebDriverInstance() {
@@ -18,13 +23,17 @@ public class WebDriverSingleton {
         return instance = init();
     }
 
+
+
     private static WebDriver init() {
-        RunLocationCreator creator = new LocalCreator();
-        WebDriver driver = creator.getWebDriver();
-        driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        if (null == runLocationCreator){
+            runLocationCreator = new LocalCreator();
+        }
+        WebDriver driver = runLocationCreator.getWebDriver();
+        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        return driver;
+        return new CustomWebDriver(driver);
     }
 
     public static void kill() {
@@ -32,6 +41,7 @@ public class WebDriverSingleton {
             try {
                 instance.quit();
             } catch (Exception e) {
+                System.out.println(e.getMessage());
                 System.out.println("Cannot kill browser");
             } finally {
                 instance = null;

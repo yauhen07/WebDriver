@@ -12,5 +12,4 @@ public class LocalCreator extends RunLocationCreator {
         driver = new ChromeDriver();
         return driver;
     }
-
 }
