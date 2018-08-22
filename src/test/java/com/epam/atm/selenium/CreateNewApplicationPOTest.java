@@ -7,7 +7,7 @@ import pageobject.*;
 import services.LoginService;
 import util.DataGeneration;
 
-public class CreateNewApplicationPOTest extends BaseLocalTest {
+public class CreateNewApplicationPOTest extends BaseTest {
 
     private static final String TRADE_NAME = DataGeneration.generateUniqueTradeName();
     private static final String EMAIL = TRADE_NAME + "@example.com";
@@ -20,7 +20,7 @@ public class CreateNewApplicationPOTest extends BaseLocalTest {
 
     @Test(description = "Creation of new Application and check Standard MSF rate")
     public void createNewBasicApplication() {
-        HomePage homePage = LoginService.loginToSF(driver, new User());
+        HomePage homePage = LoginService.loginToSF(new User());
         ApplicationsPage applicationsPage = homePage.clickApplicationsLinkInNavBar();
         NewApplicationFirstFormPage firstFormOfApplication = applicationsPage.clickCreateNewApplicationButton();
         firstFormOfApplication.inputTradeName(TRADE_NAME);
