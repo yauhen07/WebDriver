@@ -1,7 +1,6 @@
 package pageobject;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import util.Helpers;
 
 public class NewApplicationFirstFormPage extends AbstractPage {
@@ -11,9 +10,6 @@ public class NewApplicationFirstFormPage extends AbstractPage {
     private static final By NUMBER_ADDITIONAL_OUTLETS_FIELD_LOCATOR = By.xpath("//div[@class='slds-form slds-form_compound']//input[@id='input-01']");
     private static final By NEXT_BUTTON_LOCATOR = By.xpath("//button[contains(text(),'Next')]");
 
-    public NewApplicationFirstFormPage(WebDriver driver) {
-        super(driver);
-    }
 
     public void inputTradeName(String tradeName) {
         System.out.println("Clear and populate Trade Name field");
@@ -38,6 +34,6 @@ public class NewApplicationFirstFormPage extends AbstractPage {
     public NewApplicationSecondFormPage clickNextButton() {
         System.out.println("Click Next button");
         driver.findElement(NEXT_BUTTON_LOCATOR).click();
-        return new NewApplicationSecondFormPage(driver);
+        return new NewApplicationSecondFormPage();
     }
 }

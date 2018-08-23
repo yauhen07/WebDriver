@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 import pageobject.HomePage;
 import pageobject.LoginPage;
 
-public class LoginActionTest extends BaseRemoteTest {
+public class LoginActionTest extends BaseTest {
     private static final String TITLE_HOME_PAGE = "Home | Salesforce";
 
     @Test(description = "Check Login to SalesForce is working")
     public void loginToSF() {
-        LoginPage loginActionPage = new LoginPage(driver);
+        LoginPage loginActionPage = new LoginPage();
         loginActionPage.openURL();
         Assert.assertTrue(loginActionPage.checkUsernameIsDisplayed(), "Username field is not displayed");
         Assert.assertTrue(loginActionPage.checkPasswordIsDisplayed(), "Password field is not displayed");

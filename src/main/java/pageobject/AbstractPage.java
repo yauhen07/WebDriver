@@ -1,5 +1,6 @@
 package pageobject;
 
+import core.WebDriverSingleton;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,8 +13,8 @@ public class AbstractPage {
     private static final String RED_COLOR = "'#db3737'";
     private static final String DEFAULT_COLOR = "'#FFFF'";
 
-    public AbstractPage(WebDriver driver) {
-        this.driver = driver;
+    protected AbstractPage() {
+        this.driver = WebDriverSingleton.getWebDriverInstance();
     }
 
     protected void waitForElementPresent(By locator) {
