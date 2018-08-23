@@ -11,6 +11,7 @@ public class CustomWebDriver implements WebDriver {
     protected WebDriver driver;
 
     public CustomWebDriver(WebDriver driver) {
+        System.out.println("Custom web driver is used");
         this.driver = driver;
     }
 

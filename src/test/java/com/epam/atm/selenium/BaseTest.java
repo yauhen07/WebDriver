@@ -18,6 +18,5 @@ public abstract class BaseTest {
     @AfterClass(description = "Close browser")
     public void closeBrowser() {
         WebDriverSingleton.kill();
-        System.out.println("Browser was closed");
     }
 }
