@@ -45,6 +45,7 @@ public class CustomWebDriver implements WebDriver {
     }
 
     public void quit() {
+        System.out.println("Browser was closed");
         driver.quit();
     }
 
