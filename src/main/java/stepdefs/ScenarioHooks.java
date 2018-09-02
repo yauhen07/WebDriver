@@ -1,23 +1,17 @@
 package stepdefs;
 
-import core.LocalCreator;
-import core.RunLocationCreator;
 import core.WebDriverSingleton;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 
 public class ScenarioHooks {
-    private RunLocationCreator runLocationCreator;
-
     @Before
-    public void startBrowser() {
-        runLocationCreator = new LocalCreator();
-        WebDriverSingleton.selectDriverType(runLocationCreator);
+    public void openBrowser() {
     }
 
     @After
     public void closeBrowser() {
-        WebDriverSingleton.kill();
+        WebDriverSingleton.getWebDriverInstance().close();
     }
 }

@@ -4,6 +4,7 @@ import businessobjects.User;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 import org.testng.Assert;
 import pageobject.HomePage;
 import pageobject.LoginPage;
@@ -11,7 +12,7 @@ import pageobject.LoginPage;
 
 public class LoginStepDefs {
 
-    @Given("^Login page is opened$")
+    @Given("^Login page is opened and required elements displayed$")
     public void openLoginPage() {
         LoginPage loginPage = new LoginPage();
         loginPage.openURL();
@@ -20,7 +21,7 @@ public class LoginStepDefs {
         Assert.assertTrue(loginPage.checkLoginButtonIsDisplayed(), "Login button is not displayed");
     }
 
-    @When("^Populate ([^\"]*) and ([^\"]*) fields and login$")
+    @When("^Populate 'Login' ([^\"]*) and 'Password' ([^\"]*) fields and login$")
     public void populateCredentialsAndLogin(String login, String password) {
         new LoginPage().inputCredAndLogin(new User(login, password));
     }

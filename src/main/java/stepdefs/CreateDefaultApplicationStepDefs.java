@@ -15,19 +15,23 @@ import java.util.List;
 
 public class CreateDefaultApplicationStepDefs {
 
+    private HomePage homePage;
+    private NewApplicationFirstFormPage firstFormOfApplication;
+    private NewApplicationSecondFormPage secondFormOfApplication;
+
     @Given("^Login as Admin$")
     public void loginAsAdmin() {
-        LoginService.loginToSF(new User());
+        homePage = LoginService.loginToSF(new User());
     }
 
     @And("^Applications overview page is opened$")
     public void applicationsOverviewPageIsOpened() {
-        new HomePage().clickApplicationsLinkInNavBar();
+        homePage.clickApplicationsLinkInNavBar();
     }
 
     @When("^Populate first form with parameters:$")
     public void populateFirstFormWith(DataTable firstForm) {
-        NewApplicationFirstFormPage firstFormOfApplication = new ApplicationsPage().clickCreateNewApplicationButton();
+        firstFormOfApplication = new ApplicationsPage().clickCreateNewApplicationButton();
         firstFormOfApplication.inputTradeName(DataGeneration.generateUniqueTradeName());
         List<String> list = firstForm.asList(String.class);
         firstFormOfApplication.inputTradeName(DataGeneration.generateUniqueTradeName());
@@ -38,7 +42,7 @@ public class CreateDefaultApplicationStepDefs {
 
     @And("^Populate second form with parameters:$")
     public void poulateSecondFormWith(DataTable secondForm) {
-        NewApplicationSecondFormPage secondFormOfApplication = new NewApplicationFirstFormPage().clickNextButton();
+        secondFormOfApplication = firstFormOfApplication.clickNextButton();
         List<String> list = secondForm.asList(String.class);
         secondFormOfApplication.inputLastName(list.get(0));
         secondFormOfApplication.inputContactMobilePhone(DataGeneration.generateUniqueMobilePhone());
@@ -47,7 +51,7 @@ public class CreateDefaultApplicationStepDefs {
 
     @Then("^Check MSF rate is ([^\"]*)$")
     public void checkMSFRateIs(String rateMSF) {
-        ApplicationOverviewPage applicationOverview = new NewApplicationSecondFormPage().clickSaveButton();
+        ApplicationOverviewPage applicationOverview = secondFormOfApplication.clickSaveButton();
         Assert.assertEquals(applicationOverview.getStandartMSFRate(), rateMSF, "Standard MSF rate is incorrect");
     }
 }

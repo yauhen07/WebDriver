@@ -1,10 +1,10 @@
 Feature: Test Login functionality
 
   Background:
-    Given Login page is opened
+    Given Login page is opened and required elements displayed
 
   Scenario Outline: Login to SF
-    When Populate <Login> and <Password> fields and login
+    When Populate 'Login' <Login> and 'Password' <Password> fields and login
     Then Home page title is Home | Salesforce
 
     Examples:
