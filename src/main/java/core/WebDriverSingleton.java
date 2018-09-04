@@ -24,9 +24,8 @@ public class WebDriverSingleton {
     }
 
 
-
     private static WebDriver init() {
-        if (null == runLocationCreator){
+        if (null == runLocationCreator) {
             runLocationCreator = new LocalCreator();
         }
         WebDriver driver = runLocationCreator.getWebDriver();
