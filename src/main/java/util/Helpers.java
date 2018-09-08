@@ -20,8 +20,8 @@ public class Helpers {
         String innerComp;
         driver.findElement(locatorDropdown).click();
         List<WebElement> businessNatureDropdown = driver.findElements(locatorList);
-        for (int i = 0; i < businessNatureDropdown.size(); i++) {
-            element = businessNatureDropdown.get(i);
+        for (WebElement aBusinessNatureDropdown : businessNatureDropdown) {
+            element = aBusinessNatureDropdown;
             innerComp = element.getAttribute(attribute);
             if (innerComp.contentEquals(valueToSelect)) {
                 element.click();

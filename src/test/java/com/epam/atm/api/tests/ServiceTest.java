@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class ServiceTest {
     private Response response;
 
-    @BeforeTest
+    @BeforeTest(description = "URL + URI")
     public void intitTest() {
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
         response = RestAssured.when().get("/users").andReturn();
@@ -26,7 +26,7 @@ public class ServiceTest {
     public void checkResponseHeader() {
         String respContentType = response.getContentType();
         System.out.println("Response type: " + respContentType);
-        Assert.assertEquals(respContentType, "application/json; charset=utf-8", "Incorect responce type");
+        Assert.assertEquals(respContentType, "application/json; charset=utf-8", "Incorrect responce type");
     }
 
     @Test(description = "Check number od users in /users")

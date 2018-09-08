@@ -32,6 +32,6 @@ public class CreateNewApplicationPOTest extends BaseTest {
         secondFormOfApplication.inputContactMobilePhone(CONTACT_MOBILE_PHONE);
         secondFormOfApplication.selectBusinessLineOption(BUSINESS_LINE);
         ApplicationOverviewPage applicationOverview = secondFormOfApplication.clickSaveButton();
-        Assert.assertEquals(applicationOverview.getStandartMSFRate(), MSF_VALUE, "Standard MSF rate is incorrect");
+        Assert.assertEquals(applicationOverview.getStandardMSFRate(), MSF_VALUE, "Standard MSF rate is incorrect");
     }
 }
