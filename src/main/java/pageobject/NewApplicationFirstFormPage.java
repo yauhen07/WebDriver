@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 import util.Helpers;
 
 public class NewApplicationFirstFormPage extends AbstractPage {
-    private static final By TRADE_NAME_FIELD_LOCATOR = By.id("input-3");
-    private static final By EMAIL_FIELD_LOCATOR = By.cssSelector("#input-4"); //Please pay attention CSS selector is used !!!!!!!
+    private static final By TRADE_NAME_FIELD_LOCATOR = By.id("input-4");
+    private static final By EMAIL_FIELD_LOCATOR = By.cssSelector("#input-5"); //Please pay attention CSS selector is used !!!!!!!
     private static final By BUSINESS_NATURE_VALUE_LIST_LOCATOR = By.xpath("//select[@class='slds-select']/option");
     private static final By NUMBER_ADDITIONAL_OUTLETS_FIELD_LOCATOR = By.xpath("//div[@class='slds-form slds-form_compound']//input[@id='input-01']");
     private static final By NEXT_BUTTON_LOCATOR = By.xpath("//button[contains(text(),'Next')]");

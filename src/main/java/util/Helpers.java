@@ -16,15 +16,13 @@ public class Helpers {
     }
 
     public static void selectValueFromDropdownAppForm(WebDriver driver, By locatorDropdown, By locatorList, String valueToSelect, String attribute) {
-        WebElement element;
         String innerComp;
         driver.findElement(locatorDropdown).click();
         List<WebElement> businessNatureDropdown = driver.findElements(locatorList);
         for (WebElement aBusinessNatureDropdown : businessNatureDropdown) {
-            element = aBusinessNatureDropdown;
-            innerComp = element.getAttribute(attribute);
+            innerComp = aBusinessNatureDropdown.getAttribute(attribute);
             if (innerComp.contentEquals(valueToSelect)) {
-                element.click();
+                aBusinessNatureDropdown.click();
                 break;
             }
         }
