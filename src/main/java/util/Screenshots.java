@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 import java.io.IOException;
 
-public class Screenshoter {
+public class Screenshots {
     private static final String SCREENSHOTS_NAME_TPL = "screenshots/scr";
 
     public static void takeScreenshot(WebDriver driver) {

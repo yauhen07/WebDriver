@@ -3,7 +3,7 @@ package pageobject;
 import businessobjects.User;
 import org.openqa.selenium.By;
 import util.Helpers;
-import util.Screenshoter;
+import util.Screenshots;
 
 public class LoginPage extends AbstractPage {
     private static final String URL = "https://network-international--qa.cs83.my.salesforce.com/";
@@ -66,7 +66,7 @@ public class LoginPage extends AbstractPage {
         highlightElement(USER_NAME_FIELD_LOCATOR);
         System.out.println("Clear and populate User Name field");
         Helpers.clearAndInputAction(driver, USER_NAME_FIELD_LOCATOR, userName);
-        Screenshoter.takeScreenshot(driver);
+        Screenshots.takeScreenshot(driver);
         unhighlightElement(USER_NAME_FIELD_LOCATOR);
     }
 
@@ -74,13 +74,13 @@ public class LoginPage extends AbstractPage {
         highlightElement(PASSWORD_FIELD_LOCATOR);
         System.out.println("Clear and populate Password field");
         Helpers.clearAndInputAction(driver, PASSWORD_FIELD_LOCATOR, password);
-        Screenshoter.takeScreenshot(driver);
+        Screenshots.takeScreenshot(driver);
         unhighlightElement(PASSWORD_FIELD_LOCATOR);
     }
 
     public HomePage clickLoginButtonHighlightAndScreenshotAction() {
         highlightElement(LOGIN_BUTTON_LOCATOR);
-        Screenshoter.takeScreenshot(driver);
+        Screenshots.takeScreenshot(driver);
         unhighlightElement(LOGIN_BUTTON_LOCATOR);
         System.out.println("Click Login button");
         Helpers.clickButtonAction(driver, LOGIN_BUTTON_LOCATOR);

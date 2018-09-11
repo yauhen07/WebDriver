@@ -2,7 +2,6 @@
 *.iml
 target
 logs
-.xml
 gherkin
 screenshots
 scratch1.json
