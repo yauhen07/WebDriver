@@ -18,6 +18,7 @@ public class RemoteCreator extends RunLocationCreator {
         try {
             driver = new RemoteWebDriver(new URL(URL_REMOTE_DRIVER), DesiredCapabilities.chrome());
         } catch (MalformedURLException e) {
+            System.out.println(e.getMessage());
             e.printStackTrace();
         }
         return driver;

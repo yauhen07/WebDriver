@@ -38,7 +38,6 @@ public class WebDriverSingleton {
     public static void kill() {
         if (instance != null) {
             try {
-                System.out.println("Browser was closed");
                 instance.quit();
             } catch (Exception e) {
                 System.out.println(e.getMessage());
