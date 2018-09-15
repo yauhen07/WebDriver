@@ -52,6 +52,6 @@ public class CreateDefaultApplicationStepDefs {
     @Then("^Check MSF rate is ([^\"]*)$")
     public void checkMSFRateIs(String rateMSF) {
         ApplicationOverviewPage applicationOverview = secondFormOfApplication.clickSaveButton();
-        Assert.assertEquals(applicationOverview.getStandartMSFRate(), rateMSF, "Standard MSF rate is incorrect");
+        Assert.assertEquals(applicationOverview.getStandardMSFRate(), rateMSF, "Standard MSF rate is incorrect");
     }
 }
