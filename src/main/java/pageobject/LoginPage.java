@@ -1,6 +1,7 @@
 package pageobject;
 
 import businessobjects.User;
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 import util.Helpers;
 import util.Screenshots;
@@ -13,38 +14,38 @@ public class LoginPage extends AbstractPage {
 
 
     public void openURL() {
-        System.out.println("Open SaleseForce login page");
+        CustomLogger.info("Open SaleseForce login page");
         driver.get(URL);
     }
 
     public void inputUsername(String userName) {
-        System.out.println("Clear and populate User Name field");
+        CustomLogger.info("Clear and populate User Name field");
         Helpers.clearAndInput(driver, USER_NAME_FIELD_LOCATOR, userName);
     }
 
     public void inputPassword(String password) {
-        System.out.println("Clear and populate Password field");
+        CustomLogger.info("Clear and populate Password field");
         Helpers.clearAndInput(driver, PASSWORD_FIELD_LOCATOR, password);
     }
 
     public HomePage clickLoginButton() {
-        System.out.println("Click Login button");
+        CustomLogger.info("Click Login button");
         driver.findElement(LOGIN_BUTTON_LOCATOR).click();
         return new HomePage();
     }
 
     public boolean checkUsernameIsDisplayed() {
-        System.out.println("Check Username field is displayed");
+        CustomLogger.info("Check Username field is displayed");
         return driver.findElement(USER_NAME_FIELD_LOCATOR).isDisplayed();
     }
 
     public boolean checkPasswordIsDisplayed() {
-        System.out.println("Check Password field is displayed");
+        CustomLogger.info("Check Password field is displayed");
         return driver.findElement(PASSWORD_FIELD_LOCATOR).isDisplayed();
     }
 
     public boolean checkLoginButtonIsDisplayed() {
-        System.out.println("Check Login button is displayed");
+        CustomLogger.info("Check Login button is displayed");
         return driver.findElement(LOGIN_BUTTON_LOCATOR).isDisplayed();
     }
 
@@ -64,7 +65,7 @@ public class LoginPage extends AbstractPage {
 
     public void inputUsernameHighlightAndScreenshotAction(String userName) {
         highlightElement(USER_NAME_FIELD_LOCATOR);
-        System.out.println("Clear and populate User Name field");
+        CustomLogger.info("Clear and populate User Name field");
         Helpers.clearAndInputAction(driver, USER_NAME_FIELD_LOCATOR, userName);
         Screenshots.takeScreenshot(driver);
         unhighlightElement(USER_NAME_FIELD_LOCATOR);
@@ -72,7 +73,7 @@ public class LoginPage extends AbstractPage {
 
     public void inputPasswordHighlightAndScreenshotAction(String password) {
         highlightElement(PASSWORD_FIELD_LOCATOR);
-        System.out.println("Clear and populate Password field");
+        CustomLogger.info("Clear and populate Password field");
         Helpers.clearAndInputAction(driver, PASSWORD_FIELD_LOCATOR, password);
         Screenshots.takeScreenshot(driver);
         unhighlightElement(PASSWORD_FIELD_LOCATOR);
@@ -82,7 +83,7 @@ public class LoginPage extends AbstractPage {
         highlightElement(LOGIN_BUTTON_LOCATOR);
         Screenshots.takeScreenshot(driver);
         unhighlightElement(LOGIN_BUTTON_LOCATOR);
-        System.out.println("Click Login button");
+        CustomLogger.info("Click Login button");
         Helpers.clickButtonAction(driver, LOGIN_BUTTON_LOCATOR);
         return new HomePage();
     }

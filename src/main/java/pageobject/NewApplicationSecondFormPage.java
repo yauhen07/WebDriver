@@ -1,5 +1,6 @@
 package pageobject;
 
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 import util.Helpers;
 
@@ -12,22 +13,22 @@ public class NewApplicationSecondFormPage extends AbstractPage {
 
 
     public void inputLastName(String lastName) {
-        System.out.println("Clear and populate Last Name field");
+        CustomLogger.info("Clear and populate Last Name field");
         Helpers.clearAndInput(driver, LAST_NAME_INPUT_LOCATOR, lastName);
     }
 
     public void inputContactMobilePhone(String mobilePhone) {
-        System.out.println("Clear and populate Mobile Phone field");
+        CustomLogger.info("Clear and populate Mobile Phone field");
         Helpers.clearAndInput(driver, CONTACT_MOBILE_PHONE_INPUT_LOCATOR, mobilePhone);
     }
 
     public void selectBusinessLineOption(String businessLine) {
-        System.out.println("Select value from Business Line dropdown");
+        CustomLogger.info("Select value from Business Line dropdown");
         Helpers.selectValueFromDropdownAppForm(driver, BUSINESS_LINE_DROPDOWN_LOCATOR, BUSINESS_LINE_VALUE_LIST_LOCATOR, businessLine, "title");
     }
 
     public ApplicationOverviewPage clickSaveButton() {
-        System.out.println("Save Application");
+        CustomLogger.info("Save Application");
         driver.findElement(SAVE_BUTTON_LOCATOR).click();
         return new ApplicationOverviewPage();
     }

@@ -1,5 +1,6 @@
 package core;
 
+import logging.CustomLogger;
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -40,8 +41,8 @@ public class WebDriverSingleton {
             try {
                 instance.quit();
             } catch (Exception e) {
-                System.out.println(e.getMessage());
-                System.out.println("Cannot kill browser");
+                CustomLogger.error(e.getMessage());
+                CustomLogger.info("Cannot kill browser");
             } finally {
                 instance = null;
             }

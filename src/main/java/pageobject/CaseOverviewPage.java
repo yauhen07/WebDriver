@@ -1,5 +1,6 @@
 package pageobject;
 
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 
 public class CaseOverviewPage extends AbstractPage {
@@ -7,7 +8,7 @@ public class CaseOverviewPage extends AbstractPage {
 
 
     public String getStatusOfCase() {
-        System.out.println("Check Case created with Status - New");
+        CustomLogger.info("Check Case created with Status - New");
         return driver.findElement(STATUS_OF_CASE_LOCATOR).getText();
     }
 }

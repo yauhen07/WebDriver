@@ -1,5 +1,6 @@
 package core;
 
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,7 @@ public class CustomWebDriver implements WebDriver {
     protected WebDriver driver;
 
     public CustomWebDriver(WebDriver driver) {
-        System.out.println("Custom web driver is used");
+        CustomLogger.info("Custom web driver is used");
         this.driver = driver;
     }
 
@@ -32,7 +33,7 @@ public class CustomWebDriver implements WebDriver {
     }
 
     public WebElement findElement(By by) {
-        System.out.println("Find element by" + by.toString());
+        CustomLogger.info("Find element by" + by.toString());
         return driver.findElement(by);
     }
 
@@ -45,7 +46,7 @@ public class CustomWebDriver implements WebDriver {
     }
 
     public void quit() {
-        System.out.println("Browser was closed");
+        CustomLogger.info("Browser was closed");
         driver.quit();
     }
 

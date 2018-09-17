@@ -1,5 +1,6 @@
 package pageobject;
 
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 
 public class ApplicationOverviewPage extends AbstractPage {
@@ -7,7 +8,7 @@ public class ApplicationOverviewPage extends AbstractPage {
 
 
     public String getStandardMSFRate() {
-        System.out.println("Check Standard MSF rate for newly created Application");
+        CustomLogger.info("Check Standard MSF rate for newly created Application");
         return driver.findElement(STANDARD_MSF_RATE_FIELD_LOCATOR).getText();
     }
 }
