@@ -1,5 +1,6 @@
 package pageobject;
 
+import core.CustomWebDriver;
 import core.WebDriverSingleton;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -26,10 +27,10 @@ public class AbstractPage {
     }
 
     protected void highlightElement(By locator) {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].style.background=" + RED_COLOR, driver.findElement(locator));
+        ((JavascriptExecutor) ((CustomWebDriver) driver).driver).executeScript("arguments[0].style.background=" + RED_COLOR, driver.findElement(locator));
     }
 
     protected void unhighlightElement(By locator) {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].style.background=" + DEFAULT_COLOR, driver.findElement(locator));
+        ((JavascriptExecutor) ((CustomWebDriver) driver).driver).executeScript("arguments[0].style.background=" + DEFAULT_COLOR, driver.findElement(locator));
     }
 }

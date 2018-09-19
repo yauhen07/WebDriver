@@ -30,7 +30,7 @@ public class CustomLogger {
         logger.trace(message);
     }
 
-    public static void log(String message){
+    public static void log(String message) {
         logger.info(message);
     }
 }

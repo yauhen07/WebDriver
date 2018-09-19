@@ -1,0 +1,779 @@
+00:03:09:147 [INFO] CustomLogger.info - Custom web driver is used
+00:03:09:154 [INFO] CustomLogger.info - Open SaleseForce login page
+00:03:12:127 [INFO] CustomLogger.info - Check Username field is displayed
+00:03:12:128 [INFO] CustomLogger.info - Find element byBy.id: username
+00:03:12:196 [INFO] CustomLogger.info - Check Password field is displayed
+00:03:12:196 [INFO] CustomLogger.info - Find element byBy.id: password
+00:03:12:243 [INFO] CustomLogger.info - Check Login button is displayed
+00:03:12:244 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+00:03:12:307 [INFO] CustomLogger.info - Browser was closed
+00:12:09:219 [INFO] CustomLogger.info - Custom web driver is used
+00:12:09:234 [INFO] CustomLogger.info - Open SaleseForce login page
+00:12:13:583 [INFO] CustomLogger.info - Check Username field is displayed
+00:12:13:584 [INFO] CustomLogger.info - Find element byBy.id: username
+00:12:13:656 [INFO] CustomLogger.info - Check Password field is displayed
+00:12:13:657 [INFO] CustomLogger.info - Find element byBy.id: password
+00:12:13:709 [INFO] CustomLogger.info - Check Login button is displayed
+00:12:13:710 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+00:12:13:838 [INFO] CustomLogger.info - Browser was closed
+00:35:24:490 [INFO] CustomLogger.info - Custom web driver is used
+00:35:24:494 [INFO] CustomLogger.info - Open SaleseForce login page
+00:35:27:609 [INFO] CustomLogger.info - Check Username field is displayed
+00:35:27:610 [INFO] CustomLogger.info - Find element byBy.id: username
+00:35:27:688 [INFO] CustomLogger.info - Check Password field is displayed
+00:35:27:688 [INFO] CustomLogger.info - Find element byBy.id: password
+00:35:27:729 [INFO] CustomLogger.info - Check Login button is displayed
+00:35:27:729 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+00:35:27:842 [INFO] CustomLogger.info - Browser was closed
+00:38:50:928 [INFO] CustomLogger.info - Custom web driver is used
+00:38:50:931 [INFO] CustomLogger.info - Open SaleseForce login page
+00:38:53:552 [INFO] CustomLogger.info - Check Username field is displayed
+00:38:53:552 [INFO] CustomLogger.info - Find element byBy.id: username
+00:38:53:686 [INFO] CustomLogger.info - Check Password field is displayed
+00:38:53:686 [INFO] CustomLogger.info - Find element byBy.id: password
+00:38:53:725 [INFO] CustomLogger.info - Check Login button is displayed
+00:38:53:725 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+00:38:53:779 [INFO] CustomLogger.info - Browser was closed
+01:13:20:140 [INFO] CustomLogger.info - Custom web driver is used
+01:13:20:146 [INFO] CustomLogger.info - Open SaleseForce login page
+01:13:22:761 [INFO] CustomLogger.info - Check Username field is displayed
+01:13:22:763 [INFO] CustomLogger.info - Find element byBy.id: username
+01:13:22:883 [INFO] CustomLogger.info - Check Password field is displayed
+01:13:22:883 [INFO] CustomLogger.info - Find element byBy.id: password
+01:13:22:931 [INFO] CustomLogger.info - Check Login button is displayed
+01:13:22:932 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+01:13:23:003 [INFO] CustomLogger.info - Browser was closed
+01:18:38:772 [INFO] CustomLogger.info - Custom web driver is used
+01:18:38:779 [INFO] CustomLogger.info - Open SaleseForce login page
+01:18:41:400 [INFO] CustomLogger.info - Check Username field is displayed
+01:18:41:401 [INFO] CustomLogger.info - Find element byBy.id: username
+01:18:41:463 [INFO] CustomLogger.info - Check Password field is displayed
+01:18:41:464 [INFO] CustomLogger.info - Find element byBy.id: password
+01:18:41:515 [INFO] CustomLogger.info - Check Login button is displayed
+01:18:41:516 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+01:18:41:628 [INFO] CustomLogger.info - Browser was closed
+02:02:11:500 [INFO] CustomLogger.info - Custom web driver is used
+02:02:11:503 [INFO] CustomLogger.info - Open SaleseForce login page
+02:02:14:821 [INFO] CustomLogger.info - Check Username field is displayed
+02:02:14:822 [INFO] CustomLogger.info - Find element byBy.id: username
+02:02:14:980 [INFO] CustomLogger.info - Check Password field is displayed
+02:02:14:981 [INFO] CustomLogger.info - Find element byBy.id: password
+02:02:15:162 [INFO] CustomLogger.info - Check Login button is displayed
+02:02:15:163 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+02:02:15:242 [INFO] CustomLogger.info - Clear and populate User Name field
+02:02:15:244 [INFO] CustomLogger.info - Find element byBy.id: username
+02:02:15:307 [INFO] CustomLogger.info - Find element byBy.id: username
+02:02:15:770 [INFO] CustomLogger.info - Clear and populate Password field
+02:02:15:771 [INFO] CustomLogger.info - Find element byBy.id: password
+02:02:15:838 [INFO] CustomLogger.info - Find element byBy.id: password
+02:02:16:034 [INFO] CustomLogger.info - Click Login button
+02:02:16:034 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+02:02:20:978 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+02:02:21:014 [INFO] CustomLogger.info - Browser was closed
+02:02:25:569 [INFO] CustomLogger.info - Custom web driver is used
+02:02:25:570 [INFO] CustomLogger.info - Open SaleseForce login page
+02:02:29:090 [INFO] CustomLogger.info - Check Username field is displayed
+02:02:29:091 [INFO] CustomLogger.info - Find element byBy.id: username
+02:02:29:167 [INFO] CustomLogger.info - Check Password field is displayed
+02:02:29:167 [INFO] CustomLogger.info - Find element byBy.id: password
+02:02:29:218 [INFO] CustomLogger.info - Check Login button is displayed
+02:02:29:218 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+02:02:29:257 [INFO] CustomLogger.info - Clear and populate User Name field
+02:02:29:258 [INFO] CustomLogger.info - Find element byBy.id: username
+02:02:29:290 [INFO] CustomLogger.info - Find element byBy.id: username
+02:02:29:448 [INFO] CustomLogger.info - Clear and populate Password field
+02:02:29:448 [INFO] CustomLogger.info - Find element byBy.id: password
+02:02:29:489 [INFO] CustomLogger.info - Find element byBy.id: password
+02:02:29:666 [INFO] CustomLogger.info - Click Login button
+02:02:29:666 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+02:02:40:947 [INFO] CustomLogger.info - Browser was closed
+11:36:17:881 [INFO] CustomLogger.info - Custom web driver is used
+11:36:17:884 [INFO] CustomLogger.info - Open SaleseForce login page
+11:36:24:631 [INFO] CustomLogger.info - Check Username field is displayed
+11:36:24:631 [INFO] CustomLogger.info - Find element byBy.id: username
+11:36:24:673 [INFO] CustomLogger.info - Check Password field is displayed
+11:36:24:673 [INFO] CustomLogger.info - Find element byBy.id: password
+11:36:24:702 [INFO] CustomLogger.info - Check Login button is displayed
+11:36:24:703 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+11:36:24:750 [INFO] CustomLogger.info - Browser was closed
+11:37:45:997 [INFO] CustomLogger.info - Custom web driver is used
+11:37:46:005 [INFO] CustomLogger.info - Open SaleseForce login page
+11:37:54:517 [INFO] CustomLogger.info - Check Username field is displayed
+11:37:54:518 [INFO] CustomLogger.info - Find element byBy.id: username
+11:37:54:694 [INFO] CustomLogger.info - Check Password field is displayed
+11:37:54:694 [INFO] CustomLogger.info - Find element byBy.id: password
+11:37:54:766 [INFO] CustomLogger.info - Check Login button is displayed
+11:37:54:767 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+11:37:54:829 [INFO] CustomLogger.info - Browser was closed
+11:50:56:783 [INFO] CustomLogger.info - Custom web driver is used
+11:50:56:794 [INFO] CustomLogger.info - Open SaleseForce login page
+11:51:00:558 [INFO] CustomLogger.info - Check Username field is displayed
+11:51:00:558 [INFO] CustomLogger.info - Find element byBy.id: username
+11:51:00:606 [INFO] CustomLogger.info - Check Password field is displayed
+11:51:00:607 [INFO] CustomLogger.info - Find element byBy.id: password
+11:51:00:680 [INFO] CustomLogger.info - Check Login button is displayed
+11:51:00:681 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+11:51:01:212 [INFO] CustomLogger.info - Find element byBy.id: username
+11:51:01:235 [INFO] CustomLogger.info - Clear and populate User Name field
+11:51:01:240 [INFO] CustomLogger.info - Find element byBy.id: username
+11:51:01:265 [INFO] CustomLogger.info - Browser was closed
+21:40:15:031 [INFO] CustomLogger.info - Custom web driver is used
+21:40:15:037 [INFO] CustomLogger.info - Open SaleseForce login page
+21:40:17:596 [INFO] CustomLogger.info - Check Username field is displayed
+21:40:17:597 [INFO] CustomLogger.info - Find element byBy.id: username
+21:40:17:678 [INFO] CustomLogger.info - Check Password field is displayed
+21:40:17:678 [INFO] CustomLogger.info - Find element byBy.id: password
+21:40:17:723 [INFO] CustomLogger.info - Check Login button is displayed
+21:40:17:724 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:40:17:775 [INFO] CustomLogger.info - Find element byBy.id: username
+21:40:17:862 [INFO] CustomLogger.info - Clear and populate User Name field
+21:40:17:864 [INFO] CustomLogger.info - Find element byBy.id: username
+21:40:17:912 [INFO] CustomLogger.info - Browser was closed
+21:41:42:053 [INFO] CustomLogger.info - Custom web driver is used
+21:41:42:056 [INFO] CustomLogger.info - Open SaleseForce login page
+21:41:47:663 [INFO] CustomLogger.info - Check Username field is displayed
+21:41:47:664 [INFO] CustomLogger.info - Find element byBy.id: username
+21:41:47:836 [INFO] CustomLogger.info - Check Password field is displayed
+21:41:47:837 [INFO] CustomLogger.info - Find element byBy.id: password
+21:41:47:910 [INFO] CustomLogger.info - Check Login button is displayed
+21:41:47:910 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:41:47:984 [INFO] CustomLogger.info - Find element byBy.id: username
+21:41:48:076 [INFO] CustomLogger.info - Clear and populate User Name field
+21:41:48:077 [INFO] CustomLogger.info - Find element byBy.id: username
+21:41:48:117 [INFO] CustomLogger.info - Browser was closed
+21:42:25:825 [INFO] CustomLogger.info - Custom web driver is used
+21:42:25:830 [INFO] CustomLogger.info - Open SaleseForce login page
+21:42:28:893 [INFO] CustomLogger.info - Check Username field is displayed
+21:42:28:893 [INFO] CustomLogger.info - Find element byBy.id: username
+21:42:28:953 [INFO] CustomLogger.info - Check Password field is displayed
+21:42:28:953 [INFO] CustomLogger.info - Find element byBy.id: password
+21:42:28:990 [INFO] CustomLogger.info - Check Login button is displayed
+21:42:28:990 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:42:29:033 [INFO] CustomLogger.info - Find element byBy.id: username
+21:42:29:051 [INFO] CustomLogger.info - Clear and populate User Name field
+21:42:29:053 [INFO] CustomLogger.info - Find element byBy.id: username
+21:42:29:084 [INFO] CustomLogger.info - Browser was closed
+21:44:35:988 [INFO] CustomLogger.info - Custom web driver is used
+21:44:35:992 [INFO] CustomLogger.info - Open SaleseForce login page
+21:44:38:818 [INFO] CustomLogger.info - Check Username field is displayed
+21:44:38:818 [INFO] CustomLogger.info - Find element byBy.id: username
+21:44:38:939 [INFO] CustomLogger.info - Check Password field is displayed
+21:44:38:940 [INFO] CustomLogger.info - Find element byBy.id: password
+21:44:38:984 [INFO] CustomLogger.info - Check Login button is displayed
+21:44:38:985 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:44:39:029 [INFO] CustomLogger.info - Find element byBy.id: username
+21:44:39:043 [INFO] CustomLogger.info - Clear and populate User Name field
+21:44:39:044 [INFO] CustomLogger.info - Find element byBy.id: username
+21:44:39:088 [INFO] CustomLogger.info - Browser was closed
+21:52:14:687 [INFO] CustomLogger.info - Custom web driver is used
+21:52:14:691 [INFO] CustomLogger.info - Open SaleseForce login page
+21:52:17:630 [INFO] CustomLogger.info - Check Username field is displayed
+21:52:17:630 [INFO] CustomLogger.info - Find element byBy.id: username
+21:52:17:699 [INFO] CustomLogger.info - Check Password field is displayed
+21:52:17:700 [INFO] CustomLogger.info - Find element byBy.id: password
+21:52:17:744 [INFO] CustomLogger.info - Check Login button is displayed
+21:52:17:745 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:52:17:857 [INFO] CustomLogger.info - Find element byBy.id: username
+21:52:17:879 [INFO] CustomLogger.info - Browser was closed
+21:53:59:051 [INFO] CustomLogger.info - Custom web driver is used
+21:53:59:057 [INFO] CustomLogger.info - Open SaleseForce login page
+21:54:02:221 [INFO] CustomLogger.info - Check Username field is displayed
+21:54:02:222 [INFO] CustomLogger.info - Find element byBy.id: username
+21:54:02:286 [INFO] CustomLogger.info - Check Password field is displayed
+21:54:02:286 [INFO] CustomLogger.info - Find element byBy.id: password
+21:54:02:323 [INFO] CustomLogger.info - Check Login button is displayed
+21:54:02:323 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:54:02:414 [INFO] CustomLogger.info - Find element byBy.id: username
+21:54:02:442 [INFO] CustomLogger.info - Clear and populate User Name field
+21:54:02:444 [INFO] CustomLogger.info - Find element byBy.id: username
+21:54:02:482 [INFO] CustomLogger.info - Browser was closed
+21:56:22:837 [INFO] CustomLogger.info - Custom web driver is used
+21:56:22:842 [INFO] CustomLogger.info - Open SaleseForce login page
+21:56:25:574 [INFO] CustomLogger.info - Check Username field is displayed
+21:56:25:574 [INFO] CustomLogger.info - Find element byBy.id: username
+21:56:25:650 [INFO] CustomLogger.info - Check Password field is displayed
+21:56:25:650 [INFO] CustomLogger.info - Find element byBy.id: password
+21:56:25:685 [INFO] CustomLogger.info - Check Login button is displayed
+21:56:25:686 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:56:25:762 [INFO] CustomLogger.info - Find element byBy.id: username
+21:56:25:864 [INFO] CustomLogger.info - Clear and populate User Name field
+21:56:25:864 [INFO] CustomLogger.info - Find element byBy.id: username
+21:56:26:543 [INFO] CustomLogger.info - Find element byBy.id: username
+21:56:26:562 [INFO] CustomLogger.info - Find element byBy.id: password
+21:56:26:628 [INFO] CustomLogger.info - Clear and populate Password field
+21:56:26:629 [INFO] CustomLogger.info - Find element byBy.id: password
+21:56:27:157 [INFO] CustomLogger.info - Find element byBy.id: password
+21:56:27:210 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:56:27:789 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:56:27:817 [INFO] CustomLogger.info - Click Login button
+21:56:27:818 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+21:56:47:944 [INFO] CustomLogger.info - Browser was closed
+22:07:14:832 [INFO] CustomLogger.info - Custom web driver is used
+22:07:14:836 [INFO] CustomLogger.info - Open SaleseForce login page
+22:07:17:772 [INFO] CustomLogger.info - Check Username field is displayed
+22:07:17:774 [INFO] CustomLogger.info - Find element byBy.id: username
+22:07:17:833 [INFO] CustomLogger.info - Check Password field is displayed
+22:07:17:833 [INFO] CustomLogger.info - Find element byBy.id: password
+22:07:17:868 [INFO] CustomLogger.info - Check Login button is displayed
+22:07:17:869 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:07:17:910 [INFO] CustomLogger.info - Find element byBy.id: username
+22:07:17:981 [INFO] CustomLogger.info - Clear and populate User Name field
+22:07:17:983 [INFO] CustomLogger.info - Find element byBy.id: username
+22:07:18:621 [INFO] CustomLogger.info - Find element byBy.id: username
+22:07:18:642 [INFO] CustomLogger.info - Find element byBy.id: password
+22:07:18:661 [INFO] CustomLogger.info - Clear and populate Password field
+22:07:18:662 [INFO] CustomLogger.info - Find element byBy.id: password
+22:07:19:240 [INFO] CustomLogger.info - Find element byBy.id: password
+22:07:19:267 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:07:19:789 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:07:19:812 [INFO] CustomLogger.info - Click Login button
+22:07:19:812 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:07:39:899 [INFO] CustomLogger.info - Browser was closed
+22:08:10:154 [INFO] CustomLogger.info - Custom web driver is used
+22:08:10:158 [INFO] CustomLogger.info - Open SaleseForce login page
+22:08:15:325 [INFO] CustomLogger.info - Check Username field is displayed
+22:08:15:327 [INFO] CustomLogger.info - Find element byBy.id: username
+22:08:15:463 [INFO] CustomLogger.info - Check Password field is displayed
+22:08:15:464 [INFO] CustomLogger.info - Find element byBy.id: password
+22:08:15:512 [INFO] CustomLogger.info - Check Login button is displayed
+22:08:15:512 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:08:15:569 [INFO] CustomLogger.info - Find element byBy.id: username
+22:08:15:598 [INFO] CustomLogger.info - Clear and populate User Name field
+22:08:15:599 [INFO] CustomLogger.info - Find element byBy.id: username
+22:08:16:453 [INFO] CustomLogger.info - Find element byBy.id: username
+22:08:16:477 [INFO] CustomLogger.info - Find element byBy.id: password
+22:08:16:499 [INFO] CustomLogger.info - Clear and populate Password field
+22:08:16:499 [INFO] CustomLogger.info - Find element byBy.id: password
+22:08:17:244 [INFO] CustomLogger.info - Find element byBy.id: password
+22:10:12:112 [INFO] CustomLogger.info - Custom web driver is used
+22:10:12:123 [INFO] CustomLogger.info - Open SaleseForce login page
+22:10:14:827 [INFO] CustomLogger.info - Check Username field is displayed
+22:10:14:828 [INFO] CustomLogger.info - Find element byBy.id: username
+22:10:14:930 [INFO] CustomLogger.info - Check Password field is displayed
+22:10:14:931 [INFO] CustomLogger.info - Find element byBy.id: password
+22:10:15:035 [INFO] CustomLogger.info - Check Login button is displayed
+22:10:15:036 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:10:15:091 [INFO] CustomLogger.info - Find element byBy.id: username
+22:10:15:117 [INFO] CustomLogger.info - Clear and populate User Name field
+22:10:15:118 [INFO] CustomLogger.info - Find element byBy.id: username
+22:10:15:903 [INFO] CustomLogger.info - Find element byBy.id: username
+22:10:15:949 [INFO] CustomLogger.info - Find element byBy.id: password
+22:10:15:977 [INFO] CustomLogger.info - Clear and populate Password field
+22:10:15:977 [INFO] CustomLogger.info - Find element byBy.id: password
+22:10:16:588 [INFO] CustomLogger.info - Find element byBy.id: password
+22:10:16:614 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:10:17:170 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:10:17:189 [INFO] CustomLogger.info - Click Login button
+22:10:17:190 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:10:37:258 [INFO] CustomLogger.info - Browser was closed
+22:10:54:042 [INFO] CustomLogger.info - Custom web driver is used
+22:10:54:045 [INFO] CustomLogger.info - Open SaleseForce login page
+22:10:57:742 [INFO] CustomLogger.info - Clear and populate User Name field
+22:10:57:743 [INFO] CustomLogger.info - Find element byBy.id: username
+22:10:57:799 [INFO] CustomLogger.info - Find element byBy.id: username
+22:10:58:061 [INFO] CustomLogger.info - Clear and populate Password field
+22:10:58:062 [INFO] CustomLogger.info - Find element byBy.id: password
+22:10:58:118 [INFO] CustomLogger.info - Find element byBy.id: password
+22:10:58:276 [INFO] CustomLogger.info - Click Login button
+22:10:58:276 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:11:09:400 [INFO] CustomLogger.info - Browser was closed
+22:11:46:070 [INFO] CustomLogger.info - Custom web driver is used
+22:11:46:075 [INFO] CustomLogger.info - Open SaleseForce login page
+22:11:56:529 [INFO] CustomLogger.info - Clear and populate User Name field
+22:11:56:538 [INFO] CustomLogger.info - Find element byBy.id: username
+22:11:56:685 [INFO] CustomLogger.info - Browser was closed
+22:12:08:444 [INFO] CustomLogger.info - Custom web driver is used
+22:12:08:449 [INFO] CustomLogger.info - Open SaleseForce login page
+22:12:10:854 [INFO] CustomLogger.info - Check Username field is displayed
+22:12:10:854 [INFO] CustomLogger.info - Find element byBy.id: username
+22:12:10:991 [INFO] CustomLogger.info - Check Password field is displayed
+22:12:10:991 [INFO] CustomLogger.info - Find element byBy.id: password
+22:12:11:038 [INFO] CustomLogger.info - Check Login button is displayed
+22:12:11:038 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:12:11:092 [INFO] CustomLogger.info - Clear and populate User Name field
+22:12:11:093 [INFO] CustomLogger.info - Find element byBy.id: username
+22:12:11:132 [INFO] CustomLogger.info - Find element byBy.id: username
+22:12:11:360 [INFO] CustomLogger.info - Clear and populate Password field
+22:12:11:361 [INFO] CustomLogger.info - Find element byBy.id: password
+22:12:11:406 [INFO] CustomLogger.info - Find element byBy.id: password
+22:12:11:570 [INFO] CustomLogger.info - Click Login button
+22:12:11:570 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:12:16:361 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+22:12:16:431 [INFO] CustomLogger.info - Browser was closed
+22:17:33:778 [INFO] CustomLogger.info - Custom web driver is used
+22:17:33:783 [INFO] CustomLogger.info - Open SaleseForce login page
+22:17:39:865 [INFO] CustomLogger.info - Check Username field is displayed
+22:17:39:865 [INFO] CustomLogger.info - Find element byBy.id: username
+22:17:39:927 [INFO] CustomLogger.info - Check Password field is displayed
+22:17:39:928 [INFO] CustomLogger.info - Find element byBy.id: password
+22:17:39:969 [INFO] CustomLogger.info - Check Login button is displayed
+22:17:39:970 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:17:40:012 [INFO] CustomLogger.info - Find element byBy.id: username
+22:17:40:039 [INFO] CustomLogger.info - Clear and populate User Name field
+22:17:40:040 [INFO] CustomLogger.info - Find element byBy.id: username
+22:17:40:767 [INFO] CustomLogger.info - Find element byBy.id: username
+22:17:40:793 [INFO] CustomLogger.info - Find element byBy.id: password
+22:17:40:814 [INFO] CustomLogger.info - Clear and populate Password field
+22:17:40:814 [INFO] CustomLogger.info - Find element byBy.id: password
+22:17:41:474 [INFO] CustomLogger.info - Find element byBy.id: password
+22:17:41:561 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:17:42:113 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:17:42:150 [INFO] CustomLogger.info - Click Login button
+22:17:42:151 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:18:02:242 [INFO] CustomLogger.info - Browser was closed
+22:20:23:023 [INFO] CustomLogger.info - Custom web driver is used
+22:20:23:029 [INFO] CustomLogger.info - Open SaleseForce login page
+22:20:26:042 [INFO] CustomLogger.info - Check Username field is displayed
+22:20:26:043 [INFO] CustomLogger.info - Find element byBy.id: username
+22:20:26:120 [INFO] CustomLogger.info - Check Password field is displayed
+22:20:26:120 [INFO] CustomLogger.info - Find element byBy.id: password
+22:20:26:176 [INFO] CustomLogger.info - Check Login button is displayed
+22:20:26:177 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:20:26:238 [INFO] CustomLogger.info - Find element byBy.id: username
+22:20:26:324 [INFO] CustomLogger.info - Clear and populate User Name field
+22:20:26:326 [INFO] CustomLogger.info - Find element byBy.id: username
+22:20:26:968 [INFO] CustomLogger.info - Find element byBy.id: username
+22:20:26:995 [INFO] CustomLogger.info - Find element byBy.id: password
+22:20:27:018 [INFO] CustomLogger.info - Clear and populate Password field
+22:20:27:018 [INFO] CustomLogger.info - Find element byBy.id: password
+22:20:27:647 [INFO] CustomLogger.info - Find element byBy.id: password
+22:20:27:700 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:20:28:290 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:20:28:311 [INFO] CustomLogger.info - Click Login button
+22:20:28:311 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:20:48:388 [INFO] CustomLogger.info - Browser was closed
+22:20:54:885 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:42:40:005 [INFO] CustomLogger.info - Custom web driver is used
+22:42:40:011 [INFO] CustomLogger.info - Open SaleseForce login page
+22:42:43:413 [INFO] CustomLogger.info - Clear and populate User Name field
+22:42:43:414 [INFO] CustomLogger.info - Find element byBy.id: username
+22:42:43:477 [INFO] CustomLogger.info - Find element byBy.id: username
+22:42:43:726 [INFO] CustomLogger.info - Clear and populate Password field
+22:42:43:727 [INFO] CustomLogger.info - Find element byBy.id: password
+22:42:43:845 [INFO] CustomLogger.info - Find element byBy.id: password
+22:42:43:936 [INFO] CustomLogger.info - Click Login button
+22:42:43:936 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:42:45:038 [INFO] CustomLogger.info - Open Applications tab
+22:42:45:038 [INFO] CustomLogger.info - Find element byBy.xpath: //span[@class='slds-truncate'][contains(text(),'Applications')]
+22:42:48:744 [INFO] CustomLogger.info - Click Create New Application button
+22:42:48:745 [INFO] CustomLogger.info - Find element byBy.xpath: //div[@title='New']
+22:42:50:316 [INFO] CustomLogger.info - Clear and populate Trade Name field
+22:42:50:316 [INFO] CustomLogger.info - Find element byBy.id: input-4
+22:42:53:327 [INFO] CustomLogger.info - Find element byBy.id: input-4
+22:42:53:652 [INFO] CustomLogger.info - Clear and populate Email field
+22:42:53:652 [INFO] CustomLogger.info - Find element byBy.cssSelector: #input-5
+22:42:53:705 [INFO] CustomLogger.info - Find element byBy.cssSelector: #input-5
+22:42:54:139 [INFO] CustomLogger.info - Clear and populate Number Of Additional Outlets field
+22:42:54:139 [INFO] CustomLogger.info - Find element byBy.xpath: //div[@class='slds-form slds-form_compound']//input[@id='input-01']
+22:42:54:204 [INFO] CustomLogger.info - Find element byBy.xpath: //div[@class='slds-form slds-form_compound']//input[@id='input-01']
+22:42:54:290 [INFO] CustomLogger.info - Select value from Business Nature Option
+22:42:54:290 [INFO] CustomLogger.info - Find element byBy.xpath: //select[@class='slds-select']/option
+22:42:54:575 [INFO] CustomLogger.info - Click Next button
+22:42:54:575 [INFO] CustomLogger.info - Find element byBy.xpath: //button[contains(text(),'Next')]
+22:42:54:758 [INFO] CustomLogger.info - Clear and populate Last Name field
+22:42:54:759 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@maxlength='80' and @data-interactive-lib-uid='24']
+22:43:14:852 [INFO] CustomLogger.info - Browser was closed
+22:43:19:427 [INFO] CustomLogger.info - Custom web driver is used
+22:43:19:427 [INFO] CustomLogger.info - Open SaleseForce login page
+22:43:21:816 [INFO] CustomLogger.info - Clear and populate User Name field
+22:43:21:816 [INFO] CustomLogger.info - Find element byBy.id: username
+22:43:21:975 [INFO] CustomLogger.info - Find element byBy.id: username
+22:43:22:212 [INFO] CustomLogger.info - Clear and populate Password field
+22:43:22:212 [INFO] CustomLogger.info - Find element byBy.id: password
+22:43:22:265 [INFO] CustomLogger.info - Find element byBy.id: password
+22:43:22:364 [INFO] CustomLogger.info - Click Login button
+22:43:22:364 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:43:23:488 [INFO] CustomLogger.info - Open Cases tab
+22:43:23:488 [INFO] CustomLogger.info - Find element byBy.xpath: //span[contains(@class,'slds-truncate')][contains(text(),'Cases')]
+22:43:27:007 [INFO] CustomLogger.info - Click create new Case
+22:43:27:007 [INFO] CustomLogger.info - Find element byBy.xpath: //div[@title='New']
+22:43:29:138 [INFO] CustomLogger.info - Create default type of Case
+22:43:29:138 [INFO] CustomLogger.info - Find element byBy.xpath: //span[contains(text(),'Next')]
+22:43:30:343 [INFO] CustomLogger.info - Save Case with default values
+22:43:30:343 [INFO] CustomLogger.info - Find element byBy.xpath: //button[contains(@title,'Save')]//span[contains(@class,'label bBody')][contains(text(),'Save')]
+22:43:32:228 [INFO] CustomLogger.info - Check Case created with Status - New
+22:43:32:228 [INFO] CustomLogger.info - Find element byBy.xpath: //p[@title='Status']/../*[@class='slds-text-body--regular  slds-truncate']
+22:43:52:247 [INFO] CustomLogger.info - Browser was closed
+22:43:56:669 [INFO] CustomLogger.info - Custom web driver is used
+22:43:56:669 [INFO] CustomLogger.info - Open SaleseForce login page
+22:43:59:991 [INFO] CustomLogger.info - Check Username field is displayed
+22:43:59:991 [INFO] CustomLogger.info - Find element byBy.id: username
+22:44:00:073 [INFO] CustomLogger.info - Check Password field is displayed
+22:44:00:074 [INFO] CustomLogger.info - Find element byBy.id: password
+22:44:00:108 [INFO] CustomLogger.info - Check Login button is displayed
+22:44:00:109 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:44:00:192 [INFO] CustomLogger.info - Find element byBy.id: username
+22:44:00:223 [INFO] CustomLogger.info - Clear and populate User Name field
+22:44:00:224 [INFO] CustomLogger.info - Find element byBy.id: username
+22:44:00:850 [INFO] CustomLogger.info - Find element byBy.id: username
+22:44:00:870 [INFO] CustomLogger.info - Find element byBy.id: password
+22:44:00:887 [INFO] CustomLogger.info - Clear and populate Password field
+22:44:00:888 [INFO] CustomLogger.info - Find element byBy.id: password
+22:44:01:441 [INFO] CustomLogger.info - Find element byBy.id: password
+22:44:01:531 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:44:02:046 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:44:02:082 [INFO] CustomLogger.info - Click Login button
+22:44:02:082 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:44:22:157 [INFO] CustomLogger.info - Browser was closed
+22:44:26:563 [INFO] CustomLogger.info - Custom web driver is used
+22:44:26:564 [INFO] CustomLogger.info - Open SaleseForce login page
+22:44:30:087 [INFO] CustomLogger.info - Clear and populate User Name field
+22:44:30:087 [INFO] CustomLogger.info - Find element byBy.id: username
+22:44:30:175 [INFO] CustomLogger.info - Find element byBy.id: username
+22:44:30:433 [INFO] CustomLogger.info - Clear and populate Password field
+22:44:30:433 [INFO] CustomLogger.info - Find element byBy.id: password
+22:44:30:556 [INFO] CustomLogger.info - Find element byBy.id: password
+22:44:30:691 [INFO] CustomLogger.info - Click Login button
+22:44:30:691 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:44:35:628 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+22:44:35:672 [INFO] CustomLogger.info - Browser was closed
+22:44:40:161 [INFO] CustomLogger.info - Custom web driver is used
+22:44:40:161 [INFO] CustomLogger.info - Open SaleseForce login page
+22:44:42:433 [INFO] CustomLogger.info - Check Username field is displayed
+22:44:42:433 [INFO] CustomLogger.info - Find element byBy.id: username
+22:44:42:492 [INFO] CustomLogger.info - Check Password field is displayed
+22:44:42:492 [INFO] CustomLogger.info - Find element byBy.id: password
+22:44:42:600 [INFO] CustomLogger.info - Check Login button is displayed
+22:44:42:600 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:44:42:664 [INFO] CustomLogger.info - Clear and populate User Name field
+22:44:42:664 [INFO] CustomLogger.info - Find element byBy.id: username
+22:44:42:703 [INFO] CustomLogger.info - Find element byBy.id: username
+22:44:42:916 [INFO] CustomLogger.info - Clear and populate Password field
+22:44:42:916 [INFO] CustomLogger.info - Find element byBy.id: password
+22:44:42:958 [INFO] CustomLogger.info - Find element byBy.id: password
+22:44:43:112 [INFO] CustomLogger.info - Click Login button
+22:44:43:112 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:44:47:309 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+22:44:47:355 [INFO] CustomLogger.info - Browser was closed
+22:56:11:678 [INFO] CustomLogger.info - Custom web driver is used
+22:56:11:687 [INFO] CustomLogger.info - Open SaleseForce login page
+22:56:17:455 [INFO] CustomLogger.info - Check Username field is displayed
+22:56:17:455 [INFO] CustomLogger.info - Find element byBy.id: username
+22:56:17:553 [INFO] CustomLogger.info - Check Password field is displayed
+22:56:17:553 [INFO] CustomLogger.info - Find element byBy.id: password
+22:56:17:604 [INFO] CustomLogger.info - Check Login button is displayed
+22:56:17:604 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:56:17:645 [INFO] CustomLogger.info - Find element byBy.id: username
+22:56:17:675 [INFO] CustomLogger.info - Clear and populate User Name field
+22:56:17:677 [INFO] CustomLogger.info - Find element byBy.id: username
+22:56:18:359 [INFO] CustomLogger.info - Find element byBy.id: username
+22:56:18:384 [INFO] CustomLogger.info - Find element byBy.id: password
+22:56:18:411 [INFO] CustomLogger.info - Clear and populate Password field
+22:56:18:412 [INFO] CustomLogger.info - Find element byBy.id: password
+22:56:19:079 [INFO] CustomLogger.info - Find element byBy.id: password
+22:56:19:150 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:56:19:837 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:56:19:863 [INFO] CustomLogger.info - Click Login button
+22:56:19:863 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+22:56:39:951 [INFO] CustomLogger.info - Browser was closed
+23:03:11:629 [INFO] CustomLogger.info - Custom web driver is used
+23:03:11:638 [INFO] CustomLogger.info - Open SaleseForce login page
+23:03:19:086 [INFO] CustomLogger.info - Check Username field is displayed
+23:03:19:086 [INFO] CustomLogger.info - Find element byBy.id: username
+23:03:19:154 [INFO] CustomLogger.info - Check Password field is displayed
+23:03:19:154 [INFO] CustomLogger.info - Find element byBy.id: password
+23:03:19:238 [INFO] CustomLogger.info - Check Login button is displayed
+23:03:19:238 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:03:19:284 [INFO] CustomLogger.info - Find element byBy.id: username
+23:03:19:324 [INFO] CustomLogger.info - Clear and populate User Name field
+23:03:19:325 [INFO] CustomLogger.info - Find element byBy.id: username
+23:03:20:023 [INFO] CustomLogger.info - Find element byBy.id: username
+23:03:20:077 [INFO] CustomLogger.info - Find element byBy.id: password
+23:03:20:113 [INFO] CustomLogger.info - Clear and populate Password field
+23:03:20:114 [INFO] CustomLogger.info - Find element byBy.id: password
+23:03:20:659 [INFO] CustomLogger.info - Find element byBy.id: password
+23:03:20:684 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:03:21:336 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:03:21:395 [INFO] CustomLogger.info - Click Login button
+23:03:21:396 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:03:41:568 [INFO] CustomLogger.info - Browser was closed
+23:07:38:906 [INFO] CustomLogger.info - Custom web driver is used
+23:07:38:909 [INFO] CustomLogger.info - Open SaleseForce login page
+23:07:41:790 [INFO] CustomLogger.info - Check Username field is displayed
+23:07:41:790 [INFO] CustomLogger.info - Find element byBy.id: username
+23:07:41:859 [INFO] CustomLogger.info - Check Password field is displayed
+23:07:41:860 [INFO] CustomLogger.info - Find element byBy.id: password
+23:07:41:904 [INFO] CustomLogger.info - Check Login button is displayed
+23:07:41:904 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:07:41:943 [INFO] CustomLogger.info - Find element byBy.id: username
+23:07:41:975 [INFO] CustomLogger.info - Clear and populate User Name field
+23:07:41:977 [INFO] CustomLogger.info - Find element byBy.id: username
+23:07:42:767 [INFO] CustomLogger.info - Find element byBy.id: username
+23:07:42:789 [INFO] CustomLogger.info - Find element byBy.id: password
+23:07:42:812 [INFO] CustomLogger.info - Clear and populate Password field
+23:07:42:812 [INFO] CustomLogger.info - Find element byBy.id: password
+23:07:43:598 [INFO] CustomLogger.info - Find element byBy.id: password
+23:07:43:642 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:07:44:382 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:07:44:403 [INFO] CustomLogger.info - Click Login button
+23:07:44:404 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:08:04:453 [INFO] CustomLogger.info - Browser was closed
+23:09:32:013 [INFO] CustomLogger.info - Custom web driver is used
+23:09:32:019 [INFO] CustomLogger.info - Open SaleseForce login page
+23:09:35:001 [INFO] CustomLogger.info - Check Username field is displayed
+23:09:35:002 [INFO] CustomLogger.info - Find element byBy.id: username
+23:09:35:062 [INFO] CustomLogger.info - Check Password field is displayed
+23:09:35:062 [INFO] CustomLogger.info - Find element byBy.id: password
+23:09:35:144 [INFO] CustomLogger.info - Check Login button is displayed
+23:09:35:146 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:09:35:190 [INFO] CustomLogger.info - Clear and populate User Name field
+23:09:35:191 [INFO] CustomLogger.info - Find element byBy.id: username
+23:09:35:233 [INFO] CustomLogger.info - Find element byBy.id: username
+23:09:35:457 [INFO] CustomLogger.info - Clear and populate Password field
+23:09:35:457 [INFO] CustomLogger.info - Find element byBy.id: password
+23:09:35:504 [INFO] CustomLogger.info - Find element byBy.id: password
+23:09:35:672 [INFO] CustomLogger.info - Click Login button
+23:09:35:672 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:09:41:289 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:09:41:325 [INFO] CustomLogger.info - Browser was closed
+23:29:06:067 [INFO] CustomLogger.info - Custom web driver is used
+23:29:06:072 [INFO] CustomLogger.info - Open SaleseForce login page
+23:29:12:007 [INFO] CustomLogger.info - Check Username field is displayed
+23:29:12:007 [INFO] CustomLogger.info - Find element byBy.id: username
+23:29:12:062 [INFO] CustomLogger.info - Check Password field is displayed
+23:29:12:062 [INFO] CustomLogger.info - Find element byBy.id: password
+23:29:12:101 [INFO] CustomLogger.info - Check Login button is displayed
+23:29:12:102 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:29:12:141 [INFO] CustomLogger.info - Clear and populate User Name field
+23:29:12:143 [INFO] CustomLogger.info - Find element byBy.id: username
+23:29:12:178 [INFO] CustomLogger.info - Find element byBy.id: username
+23:29:12:396 [INFO] CustomLogger.info - Clear and populate Password field
+23:29:12:397 [INFO] CustomLogger.info - Find element byBy.id: password
+23:29:12:442 [INFO] CustomLogger.info - Find element byBy.id: password
+23:29:12:601 [INFO] CustomLogger.info - Click Login button
+23:29:12:601 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:29:18:327 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:29:18:385 [INFO] CustomLogger.info - Browser was closed
+23:31:24:660 [INFO] CustomLogger.info - Custom web driver is used
+23:31:24:663 [INFO] CustomLogger.info - Open SaleseForce login page
+23:31:27:430 [INFO] CustomLogger.info - Check Username field is displayed
+23:31:27:431 [INFO] CustomLogger.info - Find element byBy.id: username
+23:31:27:552 [INFO] CustomLogger.info - Check Password field is displayed
+23:31:27:553 [INFO] CustomLogger.info - Find element byBy.id: password
+23:31:27:609 [INFO] CustomLogger.info - Check Login button is displayed
+23:31:27:610 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:31:27:664 [INFO] CustomLogger.info - Clear and populate User Name field
+23:31:27:665 [INFO] CustomLogger.info - Find element byBy.id: username
+23:31:27:705 [INFO] CustomLogger.info - Find element byBy.id: username
+23:31:27:942 [INFO] CustomLogger.info - Clear and populate Password field
+23:31:27:942 [INFO] CustomLogger.info - Find element byBy.id: password
+23:31:27:984 [INFO] CustomLogger.info - Find element byBy.id: password
+23:31:28:150 [INFO] CustomLogger.info - Click Login button
+23:31:28:151 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:31:34:041 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:31:34:076 [INFO] CustomLogger.info - Browser was closed
+23:32:21:660 [INFO] CustomLogger.info - Custom web driver is used
+23:32:21:664 [INFO] CustomLogger.info - Open SaleseForce login page
+23:32:24:650 [INFO] CustomLogger.info - Check Username field is displayed
+23:32:24:651 [INFO] CustomLogger.info - Find element byBy.id: username
+23:32:24:761 [INFO] CustomLogger.info - Check Password field is displayed
+23:32:24:761 [INFO] CustomLogger.info - Find element byBy.id: password
+23:32:24:805 [INFO] CustomLogger.info - Check Login button is displayed
+23:32:24:806 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:32:24:846 [INFO] CustomLogger.info - Clear and populate User Name field
+23:32:24:848 [INFO] CustomLogger.info - Find element byBy.id: username
+23:32:24:898 [INFO] CustomLogger.info - Find element byBy.id: username
+23:32:25:127 [INFO] CustomLogger.info - Clear and populate Password field
+23:32:25:128 [INFO] CustomLogger.info - Find element byBy.id: password
+23:32:25:171 [INFO] CustomLogger.info - Find element byBy.id: password
+23:32:25:343 [INFO] CustomLogger.info - Click Login button
+23:32:25:344 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:32:29:886 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:32:29:916 [INFO] CustomLogger.info - Browser was closed
+23:37:20:864 [INFO] CustomLogger.info - Custom web driver is used
+23:37:20:868 [INFO] CustomLogger.info - Open SaleseForce login page
+23:37:26:846 [INFO] CustomLogger.info - Check Username field is displayed
+23:37:26:847 [INFO] CustomLogger.info - Find element byBy.id: username
+23:37:26:909 [INFO] CustomLogger.info - Check Password field is displayed
+23:37:26:909 [INFO] CustomLogger.info - Find element byBy.id: password
+23:37:26:955 [INFO] CustomLogger.info - Check Login button is displayed
+23:37:26:956 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:37:27:107 [INFO] CustomLogger.info - Clear and populate User Name field
+23:37:27:109 [INFO] CustomLogger.info - Find element byBy.id: username
+23:37:27:159 [INFO] CustomLogger.info - Find element byBy.id: username
+23:37:27:391 [INFO] CustomLogger.info - Clear and populate Password field
+23:37:27:392 [INFO] CustomLogger.info - Find element byBy.id: password
+23:37:27:433 [INFO] CustomLogger.info - Find element byBy.id: password
+23:37:27:610 [INFO] CustomLogger.info - Click Login button
+23:37:27:610 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:37:32:549 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:37:32:609 [INFO] CustomLogger.info - Browser was closed
+23:38:10:848 [INFO] CustomLogger.info - Custom web driver is used
+23:38:10:854 [INFO] CustomLogger.info - Open SaleseForce login page
+23:38:13:269 [INFO] CustomLogger.info - Check Username field is displayed
+23:38:13:269 [INFO] CustomLogger.info - Find element byBy.id: username
+23:38:13:400 [INFO] CustomLogger.info - Check Password field is displayed
+23:38:13:400 [INFO] CustomLogger.info - Find element byBy.id: password
+23:38:13:451 [INFO] CustomLogger.info - Check Login button is displayed
+23:38:13:452 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:38:13:505 [INFO] CustomLogger.info - Clear and populate User Name field
+23:38:13:506 [INFO] CustomLogger.info - Find element byBy.id: username
+23:38:13:612 [INFO] CustomLogger.info - Find element byBy.id: username
+23:38:13:776 [INFO] CustomLogger.info - Clear and populate Password field
+23:38:13:776 [INFO] CustomLogger.info - Find element byBy.id: password
+23:38:13:894 [INFO] CustomLogger.info - Find element byBy.id: password
+23:38:14:007 [INFO] CustomLogger.info - Click Login button
+23:38:14:007 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:38:18:539 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:38:18:576 [INFO] CustomLogger.info - Browser was closed
+23:40:37:052 [INFO] CustomLogger.info - Custom web driver is used
+23:40:37:057 [INFO] CustomLogger.info - Open SaleseForce login page
+23:40:42:695 [INFO] CustomLogger.info - Check Username field is displayed
+23:40:42:696 [INFO] CustomLogger.info - Find element byBy.id: username
+23:40:42:757 [INFO] CustomLogger.info - Check Password field is displayed
+23:40:42:758 [INFO] CustomLogger.info - Find element byBy.id: password
+23:40:42:800 [INFO] CustomLogger.info - Check Login button is displayed
+23:40:42:800 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:40:42:895 [INFO] CustomLogger.info - Clear and populate User Name field
+23:40:42:896 [INFO] CustomLogger.info - Find element byBy.id: username
+23:40:42:942 [INFO] CustomLogger.info - Find element byBy.id: username
+23:40:43:170 [INFO] CustomLogger.info - Clear and populate Password field
+23:40:43:171 [INFO] CustomLogger.info - Find element byBy.id: password
+23:40:43:207 [INFO] CustomLogger.info - Find element byBy.id: password
+23:40:43:307 [INFO] CustomLogger.info - Click Login button
+23:40:43:307 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:40:47:822 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:40:47:872 [INFO] CustomLogger.info - Browser was closed
+23:41:17:059 [INFO] CustomLogger.info - Custom web driver is used
+23:41:17:064 [INFO] CustomLogger.info - Open SaleseForce login page
+23:41:19:714 [INFO] CustomLogger.info - Check Username field is displayed
+23:41:19:715 [INFO] CustomLogger.info - Find element byBy.id: username
+23:41:19:799 [INFO] CustomLogger.info - Check Password field is displayed
+23:41:19:799 [INFO] CustomLogger.info - Find element byBy.id: password
+23:41:19:845 [INFO] CustomLogger.info - Check Login button is displayed
+23:41:19:846 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:41:19:958 [INFO] CustomLogger.info - Clear and populate User Name field
+23:41:19:959 [INFO] CustomLogger.info - Find element byBy.id: username
+23:41:19:999 [INFO] CustomLogger.info - Find element byBy.id: username
+23:41:20:222 [INFO] CustomLogger.info - Clear and populate Password field
+23:41:20:222 [INFO] CustomLogger.info - Find element byBy.id: password
+23:41:20:264 [INFO] CustomLogger.info - Find element byBy.id: password
+23:41:20:423 [INFO] CustomLogger.info - Click Login button
+23:41:20:424 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:41:25:385 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:41:25:423 [INFO] CustomLogger.info - Browser was closed
+23:41:59:449 [INFO] CustomLogger.info - Custom web driver is used
+23:41:59:454 [INFO] CustomLogger.info - Open SaleseForce login page
+23:42:07:798 [INFO] CustomLogger.info - Check Username field is displayed
+23:42:07:798 [INFO] CustomLogger.info - Find element byBy.id: username
+23:42:07:844 [INFO] CustomLogger.info - Check Password field is displayed
+23:42:07:844 [INFO] CustomLogger.info - Find element byBy.id: password
+23:42:07:894 [INFO] CustomLogger.info - Check Login button is displayed
+23:42:07:895 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:42:07:931 [INFO] CustomLogger.info - Clear and populate User Name field
+23:42:07:933 [INFO] CustomLogger.info - Find element byBy.id: username
+23:42:08:026 [INFO] CustomLogger.info - Find element byBy.id: username
+23:42:08:182 [INFO] CustomLogger.info - Clear and populate Password field
+23:42:08:182 [INFO] CustomLogger.info - Find element byBy.id: password
+23:42:08:307 [INFO] CustomLogger.info - Find element byBy.id: password
+23:42:08:410 [INFO] CustomLogger.info - Click Login button
+23:42:08:410 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:42:13:230 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:42:13:283 [INFO] CustomLogger.info - Browser was closed
+23:43:19:812 [INFO] CustomLogger.info - Custom web driver is used
+23:43:19:817 [INFO] CustomLogger.info - Open SaleseForce login page
+23:43:28:511 [INFO] CustomLogger.info - Check Username field is displayed
+23:43:28:511 [INFO] CustomLogger.info - Find element byBy.id: username
+23:43:28:562 [INFO] CustomLogger.info - Check Password field is displayed
+23:43:28:563 [INFO] CustomLogger.info - Find element byBy.id: password
+23:43:28:612 [INFO] CustomLogger.info - Check Login button is displayed
+23:43:28:612 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:43:28:657 [INFO] CustomLogger.info - Clear and populate User Name field
+23:43:28:659 [INFO] CustomLogger.info - Find element byBy.id: username
+23:43:28:696 [INFO] CustomLogger.info - Find element byBy.id: username
+23:43:28:908 [INFO] CustomLogger.info - Clear and populate Password field
+23:43:28:909 [INFO] CustomLogger.info - Find element byBy.id: password
+23:43:28:948 [INFO] CustomLogger.info - Find element byBy.id: password
+23:43:29:090 [INFO] CustomLogger.info - Click Login button
+23:43:29:091 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:43:33:858 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:43:33:897 [INFO] CustomLogger.info - Browser was closed
+23:46:21:456 [INFO] CustomLogger.info - Custom web driver is used
+23:46:21:496 [INFO] CustomLogger.info - Open SaleseForce login page
+23:46:26:997 [INFO] CustomLogger.info - Check Username field is displayed
+23:46:26:998 [INFO] CustomLogger.info - Find element byBy.id: username
+23:46:27:109 [INFO] CustomLogger.info - Check Password field is displayed
+23:46:27:111 [INFO] CustomLogger.info - Find element byBy.id: password
+23:46:27:155 [INFO] CustomLogger.info - Check Login button is displayed
+23:46:27:156 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:46:27:199 [INFO] CustomLogger.info - Clear and populate User Name field
+23:46:27:200 [INFO] CustomLogger.info - Find element byBy.id: username
+23:46:27:245 [INFO] CustomLogger.info - Find element byBy.id: username
+23:46:27:479 [INFO] CustomLogger.info - Clear and populate Password field
+23:46:27:481 [INFO] CustomLogger.info - Find element byBy.id: password
+23:46:27:526 [INFO] CustomLogger.info - Find element byBy.id: password
+23:46:27:701 [INFO] CustomLogger.info - Click Login button
+23:46:27:701 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:46:33:699 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:46:34:802 [INFO] CustomLogger.info - Browser was closed
+23:48:01:203 [INFO] CustomLogger.info - Custom web driver is used
+23:48:01:260 [INFO] CustomLogger.info - Open SaleseForce login page
+23:48:13:438 [INFO] CustomLogger.info - Check Username field is displayed
+23:48:13:438 [INFO] CustomLogger.info - Find element byBy.id: username
+23:48:13:486 [INFO] CustomLogger.info - Check Password field is displayed
+23:48:13:486 [INFO] CustomLogger.info - Find element byBy.id: password
+23:48:13:532 [INFO] CustomLogger.info - Check Login button is displayed
+23:48:13:533 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:48:13:589 [INFO] CustomLogger.info - Clear and populate User Name field
+23:48:13:591 [INFO] CustomLogger.info - Find element byBy.id: username
+23:48:13:798 [INFO] CustomLogger.info - Find element byBy.id: username
+23:48:14:112 [INFO] CustomLogger.info - Clear and populate Password field
+23:48:14:112 [INFO] CustomLogger.info - Find element byBy.id: password
+23:48:14:156 [INFO] CustomLogger.info - Find element byBy.id: password
+23:48:14:420 [INFO] CustomLogger.info - Click Login button
+23:48:14:421 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:48:20:170 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:48:21:254 [INFO] CustomLogger.info - Browser was closed
+23:55:38:459 [INFO] CustomLogger.info - Custom web driver is used
+23:55:38:512 [INFO] CustomLogger.info - Open SaleseForce login page
+23:55:41:448 [INFO] CustomLogger.info - Check Username field is displayed
+23:55:41:449 [INFO] CustomLogger.info - Find element byBy.id: username
+23:55:42:208 [INFO] CustomLogger.info - Browser was closed
+23:56:37:613 [INFO] CustomLogger.info - Custom web driver is used
+23:56:37:661 [INFO] CustomLogger.info - Open SaleseForce login page
+23:56:40:451 [INFO] CustomLogger.info - Check Username field is displayed
+23:56:40:452 [INFO] CustomLogger.info - Find element byBy.id: username
+23:56:40:579 [INFO] CustomLogger.info - Check Password field is displayed
+23:56:40:586 [INFO] CustomLogger.info - Find element byBy.id: password
+23:56:40:732 [INFO] CustomLogger.info - Check Login button is displayed
+23:56:40:733 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:56:40:805 [INFO] CustomLogger.info - Clear and populate User Name field
+23:56:40:807 [INFO] CustomLogger.info - Find element byBy.id: username
+23:56:40:874 [INFO] CustomLogger.info - Find element byBy.id: username
+23:56:41:098 [INFO] CustomLogger.info - Clear and populate Password field
+23:56:41:099 [INFO] CustomLogger.info - Find element byBy.id: password
+23:56:41:214 [INFO] CustomLogger.info - Find element byBy.id: password
+23:56:41:326 [INFO] CustomLogger.info - Click Login button
+23:56:41:327 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:56:45:951 [INFO] CustomLogger.info - Check that user is successfully logged in and correct Home page is displayed
+23:56:46:872 [INFO] CustomLogger.info - Browser was closed
+23:57:27:228 [INFO] CustomLogger.info - Custom web driver is used
+23:57:27:271 [INFO] CustomLogger.info - Open SaleseForce login page
+23:57:29:731 [INFO] CustomLogger.info - Clear and populate User Name field
+23:57:29:732 [INFO] CustomLogger.info - Find element byBy.id: username
+23:57:29:838 [INFO] CustomLogger.info - Find element byBy.id: username
+23:57:30:143 [INFO] CustomLogger.info - Clear and populate Password field
+23:57:30:143 [INFO] CustomLogger.info - Find element byBy.id: password
+23:57:30:280 [INFO] CustomLogger.info - Find element byBy.id: password
+23:57:30:411 [INFO] CustomLogger.info - Click Login button
+23:57:30:412 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@class='button r4 wide primary']
+23:57:31:478 [INFO] CustomLogger.info - Open Applications tab
+23:57:31:478 [INFO] CustomLogger.info - Find element byBy.xpath: //span[@class='slds-truncate'][contains(text(),'Applications')]
+23:57:35:054 [INFO] CustomLogger.info - Click Create New Application button
+23:57:35:055 [INFO] CustomLogger.info - Find element byBy.xpath: //div[@title='New']
+23:57:37:214 [INFO] CustomLogger.info - Clear and populate Trade Name field
+23:57:37:215 [INFO] CustomLogger.info - Find element byBy.id: input-4
+23:57:38:373 [INFO] CustomLogger.info - Find element byBy.id: input-4
+23:57:38:674 [INFO] CustomLogger.info - Clear and populate Email field
+23:57:38:675 [INFO] CustomLogger.info - Find element byBy.cssSelector: #input-5
+23:57:38:753 [INFO] CustomLogger.info - Find element byBy.cssSelector: #input-5
+23:57:39:523 [INFO] CustomLogger.info - Clear and populate Number Of Additional Outlets field
+23:57:39:523 [INFO] CustomLogger.info - Find element byBy.xpath: //div[@class='slds-form slds-form_compound']//input[@id='input-01']
+23:57:39:626 [INFO] CustomLogger.info - Find element byBy.xpath: //div[@class='slds-form slds-form_compound']//input[@id='input-01']
+23:57:39:725 [INFO] CustomLogger.info - Select value from Business Nature Option
+23:57:39:726 [INFO] CustomLogger.info - Find element byBy.xpath: //select[@class='slds-select']/option
+23:57:40:080 [INFO] CustomLogger.info - Click Next button
+23:57:40:080 [INFO] CustomLogger.info - Find element byBy.xpath: //button[contains(text(),'Next')]
+23:57:40:215 [INFO] CustomLogger.info - Clear and populate Last Name field
+23:57:40:215 [INFO] CustomLogger.info - Find element byBy.xpath: //input[@maxlength='80' and @data-interactive-lib-uid='24']
+23:58:00:763 [INFO] CustomLogger.info - Browser was closed

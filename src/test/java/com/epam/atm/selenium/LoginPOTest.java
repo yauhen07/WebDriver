@@ -7,7 +7,7 @@ import pageobject.HomePage;
 import pageobject.LoginPage;
 
 public class LoginPOTest extends BaseTest {
-    private static final String TITLE_HOME_PAGE = "Home | Salesforce";
+    private static final String TITLE_HOME_PAGE = "Home | Salesforce11";
 
     @Test(description = "Check Login to SalesForce is working")
     public void loginToSF() {

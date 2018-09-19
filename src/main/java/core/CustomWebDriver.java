@@ -1,15 +1,17 @@
 package core;
 
 import logging.CustomLogger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 import java.util.List;
 import java.util.Set;
 
-public class CustomWebDriver implements WebDriver {
-    protected WebDriver driver;
+public class CustomWebDriver implements WebDriver, JavascriptExecutor, TakesScreenshot {
+    private static final String RED_COLOR = "'#db3737'";
+    public WebDriver driver;
+    public JavascriptExecutor javascriptExecutor;
+    public TakesScreenshot takesScreenshot;
+
 
     public CustomWebDriver(WebDriver driver) {
         CustomLogger.info("Custom web driver is used");
@@ -34,6 +36,7 @@ public class CustomWebDriver implements WebDriver {
 
     public WebElement findElement(By by) {
         CustomLogger.info("Find element by" + by.toString());
+        ((JavascriptExecutor) driver).executeScript("arguments[0].style.background=" + RED_COLOR, driver.findElement(by));
         return driver.findElement(by);
     }
 
@@ -68,5 +71,17 @@ public class CustomWebDriver implements WebDriver {
 
     public Options manage() {
         return driver.manage();
+    }
+
+    public Object executeScript(String s, Object... objects) {
+        return javascriptExecutor.executeScript(s, objects);
+    }
+
+    public Object executeAsyncScript(String s, Object... objects) {
+        return javascriptExecutor.executeAsyncScript(s, objects);
+    }
+
+    public <X> X getScreenshotAs(OutputType<X> outputType) throws WebDriverException {
+        return takesScreenshot.getScreenshotAs(outputType);
     }
 }

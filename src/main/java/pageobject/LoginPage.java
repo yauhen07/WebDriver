@@ -4,7 +4,6 @@ import businessobjects.User;
 import logging.CustomLogger;
 import org.openqa.selenium.By;
 import util.Helpers;
-import util.Screenshots;
 
 public class LoginPage extends AbstractPage {
     private static final String URL = "https://network-international--qa.cs83.my.salesforce.com/";
@@ -49,13 +48,6 @@ public class LoginPage extends AbstractPage {
         return driver.findElement(LOGIN_BUTTON_LOCATOR).isDisplayed();
     }
 
-    public HomePage inputCredAndLogin(String username, String password) {
-        inputUsername(username);
-        inputPassword(password);
-        clickLoginButton();
-        return new HomePage();
-    }
-
     public HomePage inputCredAndLogin(User user) {
         inputUsername(user.getLogin());
         inputPassword(user.getPassword());
@@ -67,7 +59,6 @@ public class LoginPage extends AbstractPage {
         highlightElement(USER_NAME_FIELD_LOCATOR);
         CustomLogger.info("Clear and populate User Name field");
         Helpers.clearAndInputAction(driver, USER_NAME_FIELD_LOCATOR, userName);
-        Screenshots.takeScreenshot(driver);
         unhighlightElement(USER_NAME_FIELD_LOCATOR);
     }
 
@@ -75,13 +66,11 @@ public class LoginPage extends AbstractPage {
         highlightElement(PASSWORD_FIELD_LOCATOR);
         CustomLogger.info("Clear and populate Password field");
         Helpers.clearAndInputAction(driver, PASSWORD_FIELD_LOCATOR, password);
-        Screenshots.takeScreenshot(driver);
         unhighlightElement(PASSWORD_FIELD_LOCATOR);
     }
 
     public HomePage clickLoginButtonHighlightAndScreenshotAction() {
         highlightElement(LOGIN_BUTTON_LOCATOR);
-        Screenshots.takeScreenshot(driver);
         unhighlightElement(LOGIN_BUTTON_LOCATOR);
         CustomLogger.info("Click Login button");
         Helpers.clickButtonAction(driver, LOGIN_BUTTON_LOCATOR);
