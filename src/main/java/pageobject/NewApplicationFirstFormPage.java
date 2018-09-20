@@ -14,22 +14,22 @@ public class NewApplicationFirstFormPage extends AbstractPage {
 
     public void inputTradeName(String tradeName) {
         CustomLogger.info("Clear and populate Trade Name field");
-        Helpers.clearAndInput(driver, TRADE_NAME_FIELD_LOCATOR, tradeName);
+        Helpers.clearAndInput(TRADE_NAME_FIELD_LOCATOR, tradeName);
     }
 
     public void inputEmail(String email) {
         CustomLogger.info("Clear and populate Email field");
-        Helpers.clearAndInput(driver, EMAIL_FIELD_LOCATOR, email);
+        Helpers.clearAndInput(EMAIL_FIELD_LOCATOR, email);
     }
 
     public void selectBusinessNatureOption(String businessNature) {
         CustomLogger.info("Select value from Business Nature Option");
-        Helpers.selectValueFromDropdownAppForm(driver, BUSINESS_NATURE_VALUE_LIST_LOCATOR, BUSINESS_NATURE_VALUE_LIST_LOCATOR, businessNature, "value");
+        Helpers.selectValueFromDropdownAppForm(BUSINESS_NATURE_VALUE_LIST_LOCATOR, BUSINESS_NATURE_VALUE_LIST_LOCATOR, businessNature, "value");
     }
 
     public void inputNumberOfAddOutlets(String numberOfOutlets) {
         CustomLogger.info("Clear and populate Number Of Additional Outlets field");
-        Helpers.clearAndInput(driver, NUMBER_ADDITIONAL_OUTLETS_FIELD_LOCATOR, numberOfOutlets);
+        Helpers.clearAndInput(NUMBER_ADDITIONAL_OUTLETS_FIELD_LOCATOR, numberOfOutlets);
     }
 
     public NewApplicationSecondFormPage clickNextButton() {

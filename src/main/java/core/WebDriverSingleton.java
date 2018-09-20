@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class WebDriverSingleton {
 
-    private static WebDriver instance;
+    private static CustomWebDriver instance;
     private static RunLocationCreator runLocationCreator;
 
     private WebDriverSingleton() {
@@ -17,7 +17,7 @@ public class WebDriverSingleton {
         runLocationCreator = locationCreator;
     }
 
-    public static WebDriver getWebDriverInstance() {
+    public static CustomWebDriver getWebDriverInstance() {
         if (instance != null) {
             return instance;
         }
@@ -25,7 +25,7 @@ public class WebDriverSingleton {
     }
 
 
-    private static WebDriver init() {
+    private static CustomWebDriver init() {
         if (null == runLocationCreator) {
             runLocationCreator = new LocalCreator();
         }

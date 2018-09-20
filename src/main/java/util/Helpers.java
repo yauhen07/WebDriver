@@ -1,5 +1,6 @@
 package util;
 
+import core.WebDriverSingleton;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -8,17 +9,19 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
+import static core.WebDriverSingleton.getWebDriverInstance;
+
 public class Helpers {
 
-    public static void clearAndInput(WebDriver driver, By locator, String input) {
-        driver.findElement(locator).clear();
-        driver.findElement(locator).sendKeys(input);
+    public static void clearAndInput(By locator, String input) {
+        getWebDriverInstance().findElement(locator).clear();
+        getWebDriverInstance().findElement(locator).sendKeys(input);
     }
 
-    public static void selectValueFromDropdownAppForm(WebDriver driver, By locatorDropdown, By locatorList, String valueToSelect, String attribute) {
+    public static void selectValueFromDropdownAppForm(By locatorDropdown, By locatorList, String valueToSelect, String attribute) {
         String innerComp;
-        driver.findElement(locatorDropdown).click();
-        List<WebElement> businessNatureDropdown = driver.findElements(locatorList);
+        getWebDriverInstance().findElement(locatorDropdown).click();
+        List<WebElement> businessNatureDropdown = getWebDriverInstance().findElements(locatorList);
         for (WebElement aBusinessNatureDropdown : businessNatureDropdown) {
             innerComp = aBusinessNatureDropdown.getAttribute(attribute);
             if (innerComp.contentEquals(valueToSelect)) {
@@ -28,15 +31,15 @@ public class Helpers {
         }
     }
 
-    public static void clearAndInputAction(WebDriver driver, By locator, String input) {
-        WebElement inputField = driver.findElement(locator);
-        new Actions(driver).sendKeys(inputField, Keys.CLEAR).build().perform();
-        new Actions(driver).sendKeys(inputField, input).build().perform();
+    public static void clearAndInputAction(By locator, String input) {
+        WebElement inputField = getWebDriverInstance().findElement(locator);
+        new Actions(getWebDriverInstance().getDriver()).sendKeys(inputField, Keys.CLEAR).build().perform();
+        new Actions(getWebDriverInstance().getDriver()).sendKeys(inputField, input).build().perform();
     }
 
-    public static void clickButtonAction(WebDriver driver, By locator) {
-        WebElement loginButton = driver.findElement(locator);
-        new Actions(driver).click(loginButton).build().perform();
+    public static void clickButtonAction(By locator) {
+        WebElement loginButton = getWebDriverInstance().findElement(locator);
+        new Actions(getWebDriverInstance().getDriver()).click(loginButton).build().perform();
     }
 }
 

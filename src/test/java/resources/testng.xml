@@ -2,6 +2,7 @@
 <suite name="BasicSuite">
     <listeners>
         <listener class-name="util.ScreenshotsListener"/>
+
     </listeners>
     <test name="Login to SF">
         <packages>

@@ -8,14 +8,15 @@ import java.util.Set;
 
 public class CustomWebDriver implements WebDriver, JavascriptExecutor, TakesScreenshot {
     private static final String RED_COLOR = "'#db3737'";
-    public WebDriver driver;
-    public JavascriptExecutor javascriptExecutor;
-    public TakesScreenshot takesScreenshot;
-
+    private WebDriver driver;
 
     public CustomWebDriver(WebDriver driver) {
         CustomLogger.info("Custom web driver is used");
         this.driver = driver;
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
 
     public void get(String s) {
@@ -74,14 +75,14 @@ public class CustomWebDriver implements WebDriver, JavascriptExecutor, TakesScre
     }
 
     public Object executeScript(String s, Object... objects) {
-        return javascriptExecutor.executeScript(s, objects);
+        return ((JavascriptExecutor) driver).executeScript(s, objects);
     }
 
     public Object executeAsyncScript(String s, Object... objects) {
-        return javascriptExecutor.executeAsyncScript(s, objects);
+        return ((JavascriptExecutor) driver).executeAsyncScript(s, objects);
     }
 
     public <X> X getScreenshotAs(OutputType<X> outputType) throws WebDriverException {
-        return takesScreenshot.getScreenshotAs(outputType);
+        return ((TakesScreenshot) driver).getScreenshotAs(outputType);
     }
 }

@@ -9,7 +9,7 @@ import pageobject.LoginPage;
 public class LoginActionTest extends BaseTest {
     private static final String TITLE_HOME_PAGE = "Home | Salesforce";
 
-    @Test(description = "Check Login to SalesForce is working")
+    //@Test(description = "Check Login to SalesForce is working")
     public void loginToSF() {
         LoginPage loginActionPage = new LoginPage();
         loginActionPage.openURL();

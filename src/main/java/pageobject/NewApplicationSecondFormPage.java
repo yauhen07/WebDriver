@@ -14,17 +14,17 @@ public class NewApplicationSecondFormPage extends AbstractPage {
 
     public void inputLastName(String lastName) {
         CustomLogger.info("Clear and populate Last Name field");
-        Helpers.clearAndInput(driver, LAST_NAME_INPUT_LOCATOR, lastName);
+        Helpers.clearAndInput(LAST_NAME_INPUT_LOCATOR, lastName);
     }
 
     public void inputContactMobilePhone(String mobilePhone) {
         CustomLogger.info("Clear and populate Mobile Phone field");
-        Helpers.clearAndInput(driver, CONTACT_MOBILE_PHONE_INPUT_LOCATOR, mobilePhone);
+        Helpers.clearAndInput(CONTACT_MOBILE_PHONE_INPUT_LOCATOR, mobilePhone);
     }
 
     public void selectBusinessLineOption(String businessLine) {
         CustomLogger.info("Select value from Business Line dropdown");
-        Helpers.selectValueFromDropdownAppForm(driver, BUSINESS_LINE_DROPDOWN_LOCATOR, BUSINESS_LINE_VALUE_LIST_LOCATOR, businessLine, "title");
+        Helpers.selectValueFromDropdownAppForm(BUSINESS_LINE_DROPDOWN_LOCATOR, BUSINESS_LINE_VALUE_LIST_LOCATOR, businessLine, "title");
     }
 
     public ApplicationOverviewPage clickSaveButton() {
