@@ -10,7 +10,7 @@ import services.LoginService;
 public class CreateNewCasePOTest extends BaseTest {
     private static final String CASE_STATUS = "New";
 
-   // @Test(description = "Check status of new Case")
+   @Test(description = "Check status of new Case")
     public void creationOfNewCase() {
         LoginService.loginToSF(new User());
         CaseOverviewPage caseOverviewPage = CreateCaseService.createCase();

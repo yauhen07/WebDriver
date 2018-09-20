@@ -1,6 +1,7 @@
 package util;
 
 
+import logging.CustomLogger;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.testng.ITestResult;
@@ -22,8 +23,9 @@ public class ScreenshotsListener extends TestListenerAdapter {
                 String screenshotName = SCREENSHOTS_NAME_TPL + System.nanoTime();
                 File copy = new File(screenshotName + ".png");
                 FileUtils.copyFile(screenshot, copy);
-                System.out.println("Saved screenshot: " + screenshotName);
+                CustomLogger.info("Saved screenshot: " + screenshotName);
             } catch (IOException e) {
+                CustomLogger.error("Ooops! Screenshoter failed");
                 e.printStackTrace();
             }
         }
