@@ -4,7 +4,6 @@ import businessobjects.User;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
 import org.testng.Assert;
 import pageobject.HomePage;
 import pageobject.LoginPage;

@@ -1,5 +1,6 @@
 package pageobject;
 
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 
 public class NewCaseSecondFormPage extends AbstractPage {
@@ -7,7 +8,7 @@ public class NewCaseSecondFormPage extends AbstractPage {
 
 
     public CaseOverviewPage clickSaveCaseButton() {
-        System.out.println("Save Case with default values");
+        CustomLogger.info("Save Case with default values");
         driver.findElement(SAVE_BUTTON_LOCATOR).click();
         return new CaseOverviewPage();
     }

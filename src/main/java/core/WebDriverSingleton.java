@@ -1,12 +1,13 @@
 package core;
 
+import logging.CustomLogger;
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
 public class WebDriverSingleton {
 
-    private static WebDriver instance;
+    private static CustomWebDriver instance;
     private static RunLocationCreator runLocationCreator;
 
     private WebDriverSingleton() {
@@ -16,7 +17,7 @@ public class WebDriverSingleton {
         runLocationCreator = locationCreator;
     }
 
-    public static WebDriver getWebDriverInstance() {
+    public static CustomWebDriver getWebDriverInstance() {
         if (instance != null) {
             return instance;
         }
@@ -24,7 +25,7 @@ public class WebDriverSingleton {
     }
 
 
-    private static WebDriver init() {
+    private static CustomWebDriver init() {
         if (null == runLocationCreator) {
             runLocationCreator = new LocalCreator();
         }
@@ -40,8 +41,8 @@ public class WebDriverSingleton {
             try {
                 instance.quit();
             } catch (Exception e) {
-                System.out.println(e.getMessage());
-                System.out.println("Cannot kill browser");
+                CustomLogger.error(e.getMessage());
+                CustomLogger.info("Cannot kill browser");
             } finally {
                 instance = null;
             }

@@ -1,5 +1,6 @@
 package core;
 
+import logging.CustomLogger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -18,7 +19,7 @@ public class RemoteCreator extends RunLocationCreator {
         try {
             driver = new RemoteWebDriver(new URL(URL_REMOTE_DRIVER), DesiredCapabilities.chrome());
         } catch (MalformedURLException e) {
-            System.out.println(e.getMessage());
+            CustomLogger.error(e.getMessage());
             e.printStackTrace();
         }
         return driver;

@@ -1,9 +1,9 @@
 package pageobject;
 
 import businessobjects.User;
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 import util.Helpers;
-import util.Screenshots;
 
 public class LoginPage extends AbstractPage {
     private static final String URL = "https://network-international--qa.cs83.my.salesforce.com/";
@@ -13,46 +13,39 @@ public class LoginPage extends AbstractPage {
 
 
     public void openURL() {
-        System.out.println("Open SaleseForce login page");
+        CustomLogger.info("Open SaleseForce login page");
         driver.get(URL);
     }
 
     public void inputUsername(String userName) {
-        System.out.println("Clear and populate User Name field");
-        Helpers.clearAndInput(driver, USER_NAME_FIELD_LOCATOR, userName);
+        CustomLogger.info("Clear and populate User Name field");
+        Helpers.clearAndInput(USER_NAME_FIELD_LOCATOR, userName);
     }
 
     public void inputPassword(String password) {
-        System.out.println("Clear and populate Password field");
-        Helpers.clearAndInput(driver, PASSWORD_FIELD_LOCATOR, password);
+        CustomLogger.info("Clear and populate Password field");
+        Helpers.clearAndInput(PASSWORD_FIELD_LOCATOR, password);
     }
 
     public HomePage clickLoginButton() {
-        System.out.println("Click Login button");
+        CustomLogger.info("Click Login button");
         driver.findElement(LOGIN_BUTTON_LOCATOR).click();
         return new HomePage();
     }
 
     public boolean checkUsernameIsDisplayed() {
-        System.out.println("Check Username field is displayed");
+        CustomLogger.info("Check Username field is displayed");
         return driver.findElement(USER_NAME_FIELD_LOCATOR).isDisplayed();
     }
 
     public boolean checkPasswordIsDisplayed() {
-        System.out.println("Check Password field is displayed");
+        CustomLogger.info("Check Password field is displayed");
         return driver.findElement(PASSWORD_FIELD_LOCATOR).isDisplayed();
     }
 
     public boolean checkLoginButtonIsDisplayed() {
-        System.out.println("Check Login button is displayed");
+        CustomLogger.info("Check Login button is displayed");
         return driver.findElement(LOGIN_BUTTON_LOCATOR).isDisplayed();
-    }
-
-    public HomePage inputCredAndLogin(String username, String password) {
-        inputUsername(username);
-        inputPassword(password);
-        clickLoginButton();
-        return new HomePage();
     }
 
     public HomePage inputCredAndLogin(User user) {
@@ -64,26 +57,23 @@ public class LoginPage extends AbstractPage {
 
     public void inputUsernameHighlightAndScreenshotAction(String userName) {
         highlightElement(USER_NAME_FIELD_LOCATOR);
-        System.out.println("Clear and populate User Name field");
-        Helpers.clearAndInputAction(driver, USER_NAME_FIELD_LOCATOR, userName);
-        Screenshots.takeScreenshot(driver);
+        CustomLogger.info("Clear and populate User Name field");
+        Helpers.clearAndInputAction(USER_NAME_FIELD_LOCATOR, userName);
         unhighlightElement(USER_NAME_FIELD_LOCATOR);
     }
 
     public void inputPasswordHighlightAndScreenshotAction(String password) {
         highlightElement(PASSWORD_FIELD_LOCATOR);
-        System.out.println("Clear and populate Password field");
-        Helpers.clearAndInputAction(driver, PASSWORD_FIELD_LOCATOR, password);
-        Screenshots.takeScreenshot(driver);
+        CustomLogger.info("Clear and populate Password field");
+        Helpers.clearAndInputAction(PASSWORD_FIELD_LOCATOR, password);
         unhighlightElement(PASSWORD_FIELD_LOCATOR);
     }
 
     public HomePage clickLoginButtonHighlightAndScreenshotAction() {
         highlightElement(LOGIN_BUTTON_LOCATOR);
-        Screenshots.takeScreenshot(driver);
         unhighlightElement(LOGIN_BUTTON_LOCATOR);
-        System.out.println("Click Login button");
-        Helpers.clickButtonAction(driver, LOGIN_BUTTON_LOCATOR);
+        CustomLogger.info("Click Login button");
+        Helpers.clickButtonAction(LOGIN_BUTTON_LOCATOR);
         return new HomePage();
     }
 

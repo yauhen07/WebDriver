@@ -1,5 +1,6 @@
 package pageobject;
 
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 
 public class HomePage extends AbstractPage {
@@ -9,20 +10,20 @@ public class HomePage extends AbstractPage {
 
 
     public ApplicationsPage clickApplicationsLinkInNavBar() {
-        System.out.println("Open Applications tab");
+        CustomLogger.info("Open Applications tab");
         driver.findElement(APPLICATIONS_NAVIGATION_BAR_LOCATOR).click();
         return new ApplicationsPage();
     }
 
     public CasesPage clickCasesLinkInNavBar() {
-        System.out.println("Open Cases tab");
+        CustomLogger.info("Open Cases tab");
         driver.findElement(CASES_NAVIGATION_BAR_LOCATOR).click();
         return new CasesPage();
     }
 
     public String getHomePageTitle() {
         waitForElementPresent(TITLE_HOME_PAGE_LOCATOR);
-        System.out.println("Check that user is successfully logged in and correct Home page is displayed");
+        CustomLogger.info("Check that user is successfully logged in and correct Home page is displayed");
         return driver.getTitle();
     }
 }

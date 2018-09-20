@@ -1,5 +1,6 @@
 package pageobject;
 
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 
 public class ApplicationsPage extends AbstractPage {
@@ -7,7 +8,7 @@ public class ApplicationsPage extends AbstractPage {
 
 
     public NewApplicationFirstFormPage clickCreateNewApplicationButton() {
-        System.out.println("Click Create New Application button");
+        CustomLogger.info("Click Create New Application button");
         driver.findElement(NEW_APPLICATION_BUTTON_LOCATOR).click();
         return new NewApplicationFirstFormPage();
     }

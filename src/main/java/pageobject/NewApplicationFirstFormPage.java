@@ -1,5 +1,6 @@
 package pageobject;
 
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 import util.Helpers;
 
@@ -12,27 +13,27 @@ public class NewApplicationFirstFormPage extends AbstractPage {
 
 
     public void inputTradeName(String tradeName) {
-        System.out.println("Clear and populate Trade Name field");
-        Helpers.clearAndInput(driver, TRADE_NAME_FIELD_LOCATOR, tradeName);
+        CustomLogger.info("Clear and populate Trade Name field");
+        Helpers.clearAndInput(TRADE_NAME_FIELD_LOCATOR, tradeName);
     }
 
     public void inputEmail(String email) {
-        System.out.println("Clear and populate Email field");
-        Helpers.clearAndInput(driver, EMAIL_FIELD_LOCATOR, email);
+        CustomLogger.info("Clear and populate Email field");
+        Helpers.clearAndInput(EMAIL_FIELD_LOCATOR, email);
     }
 
     public void selectBusinessNatureOption(String businessNature) {
-        System.out.println("Select value from Business Nature Option");
-        Helpers.selectValueFromDropdownAppForm(driver, BUSINESS_NATURE_VALUE_LIST_LOCATOR, BUSINESS_NATURE_VALUE_LIST_LOCATOR, businessNature, "value");
+        CustomLogger.info("Select value from Business Nature Option");
+        Helpers.selectValueFromDropdownAppForm(BUSINESS_NATURE_VALUE_LIST_LOCATOR, BUSINESS_NATURE_VALUE_LIST_LOCATOR, businessNature, "value");
     }
 
     public void inputNumberOfAddOutlets(String numberOfOutlets) {
-        System.out.println("Clear and populate Number Of Additional Outlets field");
-        Helpers.clearAndInput(driver, NUMBER_ADDITIONAL_OUTLETS_FIELD_LOCATOR, numberOfOutlets);
+        CustomLogger.info("Clear and populate Number Of Additional Outlets field");
+        Helpers.clearAndInput(NUMBER_ADDITIONAL_OUTLETS_FIELD_LOCATOR, numberOfOutlets);
     }
 
     public NewApplicationSecondFormPage clickNextButton() {
-        System.out.println("Click Next button");
+        CustomLogger.info("Click Next button");
         driver.findElement(NEXT_BUTTON_LOCATOR).click();
         return new NewApplicationSecondFormPage();
     }

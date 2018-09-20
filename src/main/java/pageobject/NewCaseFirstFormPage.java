@@ -1,5 +1,6 @@
 package pageobject;
 
+import logging.CustomLogger;
 import org.openqa.selenium.By;
 
 public class NewCaseFirstFormPage extends AbstractPage {
@@ -7,7 +8,7 @@ public class NewCaseFirstFormPage extends AbstractPage {
 
 
     public NewCaseSecondFormPage clickNextButton() {
-        System.out.println("Create default type of Case");
+        CustomLogger.info("Create default type of Case");
         driver.findElement(NEXT_BUTTON_LOCATOR).click();
         return new NewCaseSecondFormPage();
     }
